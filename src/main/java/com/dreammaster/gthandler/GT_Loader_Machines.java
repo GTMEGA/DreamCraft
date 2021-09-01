@@ -101,7 +101,7 @@ public class GT_Loader_Machines
 				10752, "basicgenerator.plasmagenerator.tier.08", "Plasma Generator Mark IV",7).getStackForm(1L));
 
 		CustomItemList.Generator_Plasma_UV.set(new GT_MetaTileEntity_PlasmaGenerator(
-				10753, "basicgenerator.plasmagenerator.tier.09", "Ultimate Pocket Sun", 8).getStackForm(1L));
+				10753, "basicgenerator.plasmagenerator.tier.09", "Ultimate Sun Pocket", 8).getStackForm(1L));
 
 		//CustomItemList.Generator_Plasma_UHV.set(new GT_MetaTileEntity_PlasmaGenerator(
 		//		10754, "basicgenerator.plasmagenerator.tier.10", "Legendary Pocket Sun", 9).getStackForm(1L));
