@@ -40,6 +40,10 @@ public class GT_CraftingRecipeLoader extends gregtech.loaders.postload.GT_Crafti
         //Mine and Blade Battlegear remove recipes NBT?
         Object[] o = new Object[0];
 
+        GT_ModHandler.addCraftingRecipe(GT_OreDictUnificator.get(OrePrefixes.toolHeadDrill,Materials.WroughtIron,1),bits, new Object[]{"WIW","WIW","IhI",'W',OrePrefixes.plate.get(Materials.WroughtIron),'I',OrePrefixes.plate.get(Materials.Iron)});
+        GT_ModHandler.addCraftingRecipe(com.dreammaster.item.ItemList.DiamondDrillTip.getIS(),bits,new Object[]{"WIW","WIW","IhI",'I',OrePrefixes.plate.get(Materials.Steel),'W',OrePrefixes.gem.get(Materials.Diamond)});
+        GT_ModHandler.addCraftingRecipe(GT_OreDictUnificator.get(OrePrefixes.toolHeadChainsaw,Materials.WroughtIron,1),bits, new Object[]{"IRI","WhW","IRI",'W',OrePrefixes.plate.get(Materials.WroughtIron),'I',OrePrefixes.plate.get(Materials.Iron),'R',OrePrefixes.ring.get(Materials.Iron)});
+        //GT_ModHandler.addCraftingRecipe(GT_ModHandler.getModItem("IC2","itemToolChainsaw",1),new Object[]{"wRD","RUS","BSd",'R',OrePrefixes.rod.get(Materials.Iron),'D',GT_OreDictUnificator.get(OrePrefixes.toolHeadBuzzSaw,Materials.WroughtIron,1),'U',GT_ModHandler.getModItem("IC2","itemRecipePart",1),'S', screw.get(Materials.Iron),'B',GT_OreDictUnificator.get(OrePrefixes.battery,Materials.Basic,1)});
 
         GT_ModHandler.addCraftingRecipe(ItemList.Generator_Naquadah_Mark_I.get(1L), bits, new Object[]{"UCU", "FMF", "WCW", 'M', ItemList.Hull_EV, 'F', ItemList.Field_Generator_EV, 'C', OrePrefixes.circuit.get(Materials.Elite), 'W', OrePrefixes.cableGt04.get(Materials.Aluminium), 'U', OrePrefixes.stick.get(Materials.Uranium235)});
         GT_ModHandler.addCraftingRecipe(ItemList.Generator_Naquadah_Mark_II.get(1L), bits, new Object[]{"PCP", "FMF", "WCW", 'M', ItemList.Hull_IV, 'F', ItemList.Field_Generator_IV, 'C', OrePrefixes.circuit.get(Materials.Master), 'W', OrePrefixes.cableGt04.get(Materials.Tungsten), 'P', OrePrefixes.stick.get(Materials.Plutonium241)});

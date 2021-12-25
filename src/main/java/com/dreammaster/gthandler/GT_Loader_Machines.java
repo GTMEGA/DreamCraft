@@ -1339,7 +1339,7 @@ public class GT_Loader_Machines
 						'D', OreDictNames.craftingIndustrialDiamond }).getStackForm(1L));
 
 		CustomItemList.LatheUV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-						10922, "basicmachine.lathe.tier.08", "Advanced Lathe VII, 8, "Produces Rods more efficiently",
+						10922, "basicmachine.lathe.tier.08", "Advanced Lathe VII, 8",8, "Produces Rods more efficiently",
 						GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", false, false, 0, "LATHE",
 				new Object[] { "WCW", "EMD", "CWP",
 						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL,
