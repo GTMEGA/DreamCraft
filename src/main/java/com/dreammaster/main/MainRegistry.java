@@ -287,8 +287,8 @@ public class MainRegistry
             FMLCommonHandler.instance().bus().register(new LoginHandler());
         }
         Logger.warn( "==================================================" );
-        Logger.warn( "Welcome to Gregtech:New Horizons " + CoreModConfig.ModPackVersion );
-        Logger.warn( "Please bring comments to " + "https://discord.gg/EXshrPV" );
+        Logger.warn( "Welcome to GT:MEGA " + CoreModConfig.ModPackVersion );
+        Logger.warn( "Please bring comments to " + "https://discord.gg/gtmega" );
         Logger.warn( "==================================================" );
 
         MinecraftForge.EVENT_BUS.register(new OvenGlove.EventHandler());
