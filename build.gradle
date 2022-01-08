@@ -53,7 +53,7 @@ file "build.properties" withReader {
 
 version = "${config.coremod.version}"
 group = "com.dreammaster"
-archivesBaseName = "GTNewHorizonsCoreMod"
+archivesBaseName = "GTMEGACoreMod"
 
 minecraft {
     version = "${config.minecraft.version}-${config.forge.version}-${config.minecraft.version}"
