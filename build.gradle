@@ -1,4 +1,6 @@
 import java.util.concurrent.TimeUnit
+import java.util.Properties
+import groovy.util.ConfigSlurper
 
 buildscript {
     repositories {
@@ -157,8 +159,6 @@ dependencies {
     compile("com.github.GTNewHorizons:bartworks:master-SNAPSHOT:dev") {
         setChanging(true)
     }
-    compileOnly "com.github.GTNewHorizons:MicdoodleCore:master-SNAPSHOT:dev"
-    compileOnly "com.github.GTNewHorizons:Galacticraft:master-SNAPSHOT:dev"
     compile fileTree(dir: "libs", include: "*.jar")
 }
 

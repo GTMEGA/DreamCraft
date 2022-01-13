@@ -11,7 +11,6 @@ import com.dreammaster.command.*;
 import com.dreammaster.config.CoreModConfig;
 import com.dreammaster.creativetab.ModTabList;
 import com.dreammaster.fluids.FluidList;
-import com.dreammaster.galacticgreg.Recipes;
 import com.dreammaster.galacticgreg.SpaceDimRegisterer;
 import com.dreammaster.gthandler.*;
 import com.dreammaster.item.ItemList;
@@ -354,7 +353,6 @@ public class MainRegistry
         }
         if (Loader.isModLoaded("TwilightForest"))
         TF_Loot_Chests.init();
-        Recipes.load();
     }
 
     public static Block _mBlockBabyChest = new BlockBabyChest();
