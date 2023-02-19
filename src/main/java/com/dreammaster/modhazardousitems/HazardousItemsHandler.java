@@ -2,8 +2,8 @@
 package com.dreammaster.modhazardousitems;
 
 
-import com.dreammaster.lib.Refstrings;
 import com.dreammaster.main.MainRegistry;
+import com.dreammaster.Tags;
 import com.dreammaster.modhazardousitems.HazardousItems.HazardousItem;
 import com.dreammaster.modhazardousitems.cause.HazardCause;
 import com.google.common.collect.EvictingQueue;
@@ -59,7 +59,7 @@ public class HazardousItemsHandler
   public HazardousItemsHandler()
   {
     _mRunProfiler = true;
-    _mConfigFileName = String.format( "config/%s/HazardousItems.xml", Refstrings.COLLECTIONID );
+    _mConfigFileName = String.format( "config/%s/HazardousItems.xml", Tags.COLLECTIONID );
   }
 
   public boolean HasConfigChanged()

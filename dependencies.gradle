@@ -1,0 +1,70 @@
+// Add your dependencies here
+
+dependencies {
+    compileOnly("org.projectlombok:lombok:1.18.24")
+    annotationProcessor("org.projectlombok:lombok:1.18.24")
+    compile("eu.usrv:YAMCore:1.7.10-0.5.79:deobf") {
+        transitive = false
+    }
+    compile("com.github.GTNewHorizons:Yamcl:0.5.84:dev")
+    compile("com.azanor.baubles:Baubles:1.7.10-1.0.1.10:deobf") {
+        transitive = true
+    }
+    compileOnly("com.github.GTNewHorizons:AppleCore:3.2.0:dev") {
+        transitive = false
+    }
+    compile("codechicken:codechickencore-mc1.7.10:1.0.9-gtmega:dev") {
+        transitive = false;
+    }
+
+    compile("codechicken:codechickenlib-mc1.7.10:1.1.4-gtmega:dev"){
+        transitive = false;
+    }
+
+    compile("codechicken:notenoughitems-mc1.7.10:2.1.5-gtmega:dev"){
+        transitive = false;
+    }
+    compile("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
+    compile("gtmega:gt5u-mc1.7.10:5.29.2-mega:dev") {
+        transitive = false
+    }
+    compile("gtmega:bartworks-mc1.7.10:0.6.0-gtmega") {
+        transitive = false
+    }
+    compileOnly("com.github.GTNewHorizons:EnderCore:master-SNAPSHOT:dev") {
+        transitive = false
+    }
+
+    compileOnly("appeng:appliedenergistics2:rv3-beta-22:dev") {
+        transitive = false
+    }
+    compile("com.github.GTNewHorizons:Railcraft:master-SNAPSHOT:dev") {
+        //transitive = false
+    }
+    compileOnly("com.enderio:EnderIO:1.7.10-2.3.0.417_beta:dev") {  // TODO: use in-house version
+        transitive = false
+    }
+    compile('com.github.GTNewHorizons:EnderCore:0.2.9:dev') {
+        transitive = false
+    }
+    compileOnly("thaumcraft:Thaumcraft:1.7.10-4.2.3.5:dev") {
+        transitive = false
+    }
+    compile ":HardcoreEnderExpansion:MC-1.7.10_v1.8.6"
+    compile ":twilightforest:1.7.10-2.3.8.5-dev-deobf"
+    compile ":WitcheryExtras:1.0.1-dev"
+    compile ":witchery:1.7.10-0.24.1:deobf"
+    compile("com.github.GTMEGA:StructureLib:0237ab2549:deobf")
+    compileOnly("com.github.GTNewHorizons:TinkersConstruct:master-SNAPSHOT:dev") {
+        transitive = false
+    }
+    compile("com.github.GTNewHorizons:Mantle:0.3.4:dev") {
+        transitive = false
+    }
+    compileOnly("com.github.GTNewHorizons:ForestryMC:4.4.0:dev") {
+        transitive = false
+    }
+    compileOnly("com.github.GTNewHorizons:GalacticGregGT5:1.0.8:dev") {
+        transitive = false
+    }
+}

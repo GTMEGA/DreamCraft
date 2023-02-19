@@ -1,7 +1,7 @@
 package com.dreammaster.modcustomfuels;
 
-import com.dreammaster.lib.Refstrings;
 import com.dreammaster.main.MainRegistry;
+import com.dreammaster.Tags;
 import cpw.mods.fml.common.IFuelHandler;
 import eu.usrv.yamcore.auxiliary.LogHelper;
 import net.minecraft.item.ItemStack;
@@ -21,7 +21,7 @@ public class CustomFuelsHandler implements IFuelHandler
 
     public CustomFuelsHandler()
     {
-        _mConfigFileName = String.format("config/%s/CustomFuels.xml", Refstrings.COLLECTIONID);
+        _mConfigFileName = String.format("config/%s/CustomFuels.xml", Tags.COLLECTIONID);
     }
 
     public void InitSampleConfig()

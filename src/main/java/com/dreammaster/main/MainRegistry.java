@@ -1,5 +1,6 @@
 package com.dreammaster.main;
 
+import com.dreammaster.Tags;
 import com.dreammaster.TwilightForest.TF_Loot_Chests;
 import com.dreammaster.bartworksHandler.BacteriaRegistry;
 import com.dreammaster.bartworksHandler.PyrolyseOvenLoader;
@@ -14,7 +15,6 @@ import com.dreammaster.fluids.FluidList;
 import com.dreammaster.galacticgreg.SpaceDimRegisterer;
 import com.dreammaster.gthandler.*;
 import com.dreammaster.item.ItemList;
-import com.dreammaster.lib.Refstrings;
 import com.dreammaster.loginhandler.LoginHandler;
 import com.dreammaster.modbabychest.BlockBabyChest;
 import com.dreammaster.modbabychest.ItemBlockBabyChest;
@@ -71,9 +71,9 @@ import java.util.Random;
 import static gregtech.api.enums.Dyes.MACHINE_METAL;
 
 @Mod(
-        modid = Refstrings.MODID,
-        name = Refstrings.NAME,
-        version = Refstrings.VERSION,
+        modid = Tags.MODID,
+        name = Tags.MODNAME,
+        version = Tags.VERSION,
         dependencies =
 
             "required-before:gregtech;"
@@ -89,10 +89,10 @@ import static gregtech.api.enums.Dyes.MACHINE_METAL;
 public class MainRegistry
 {
 
-    @SidedProxy(clientSide = Refstrings.CLIENTSIDE, serverSide = Refstrings.SERVERSIDE)
+    @SidedProxy(clientSide = Tags.GROUPNAME + ".main.ClientProxy", serverSide = Tags.GROUPNAME + ".main.CommonProxy")
     public static CommonProxy proxy;
 
-    @Mod.Instance(Refstrings.MODID)
+    @Mod.Instance(Tags.MODID)
     public static MainRegistry instance;
 
     public static ModItemManager ItemManager;
@@ -108,7 +108,7 @@ public class MainRegistry
     public static CoreModConfig CoreConfig;
     public static CoreModDispatcher NW;
     public static Random Rnd;
-    public static LogHelper Logger = new LogHelper(Refstrings.MODID);
+    public static LogHelper Logger = new LogHelper(Tags.MODID);
     private static SpaceDimRegisterer SpaceDimReg;
     private static BacteriaRegistry BacteriaRegistry;
 
@@ -128,9 +128,9 @@ public class MainRegistry
 
         // ------------------------------------------------------------
         // Init coremod config file. Create it if it's not there
-        CoreConfig = new CoreModConfig(PreEvent.getModConfigurationDirectory(), Refstrings.COLLECTIONID, Refstrings.MODID);
+        CoreConfig = new CoreModConfig(PreEvent.getModConfigurationDirectory(), Tags.COLLECTIONID, Tags.MODID);
         if (!CoreConfig.LoadConfig()) {
-            Logger.error(String.format("%s could not load its config file. Things are going to be weird!", Refstrings.MODID));
+            Logger.error(String.format("%s could not load its config file. Things are going to be weird!", Tags.MODID));
         }
         // ------------------------------------------------------------
 
@@ -170,8 +170,8 @@ public class MainRegistry
 
         // ------------------------------------------------------------
         Logger.debug("PRELOAD Init itemmanager");
-        ItemManager = new ModItemManager(Refstrings.MODID);
-        BlockManager = new ModBlockManager(Refstrings.MODID);
+        ItemManager = new ModItemManager(Tags.MODID);
+        BlockManager = new ModBlockManager(Tags.MODID);
         // ------------------------------------------------------------
 
         // ------------------------------------------------------------
@@ -238,7 +238,7 @@ public class MainRegistry
 
         // ------------------------------------------------------------
         Logger.debug("PRELOAD Create Fluids");
-        FluidManager = new ModFluidManager(Refstrings.MODID);
+        FluidManager = new ModFluidManager(Tags.MODID);
         if (!FluidList.AddToItemManager(FluidManager))
         {
             Logger.warn("Some fluids failed to register. Check the logfile for details");
@@ -297,14 +297,14 @@ public class MainRegistry
     private static boolean RegisterNonEnumItems()
     {
         boolean tResult = true;
-        NHItems.OVEN_GLOVE.place(new OvenGlove("OvenGlove", ModTabList.ModGenericTab));
-        if (!ItemManager.RegisterNonEnumItem(TabManager, NHItems.OVEN_GLOVE.get())) {
-            tResult = false;
-        }
-        NHItems.WITHER_PROTECTION_RING.place(new WitherProtectionRing("WitherProtectionRing", ModTabList.ModThaumcraftTab));
-        if (!ItemManager.RegisterNonEnumItem(TabManager, NHItems.WITHER_PROTECTION_RING.get())) {
-            tResult = false;
-        }
+//        NHItems.OVEN_GLOVE.place(new OvenGlove("OvenGlove", ModTabList.ModGenericTab));
+//        if (!ItemManager.RegisterNonEnumItem(TabManager, NHItems.OVEN_GLOVE.get())) {
+//            tResult = false;
+//        }
+//        NHItems.WITHER_PROTECTION_RING.place(new WitherProtectionRing("WitherProtectionRing", ModTabList.ModThaumcraftTab));
+//        if (!ItemManager.RegisterNonEnumItem(TabManager, NHItems.WITHER_PROTECTION_RING.get())) {
+//            tResult = false;
+//        }
 
         return tResult;
     }

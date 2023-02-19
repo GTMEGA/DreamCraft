@@ -1,7 +1,7 @@
 package com.dreammaster.modbabychest;
 
 
-import com.dreammaster.lib.Refstrings;
+import com.dreammaster.Tags;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
@@ -20,7 +20,7 @@ public class GuiBabyChest extends GuiContainer
     protected void drawGuiContainerBackgroundLayer(float pPar1, int pPar2, int pPar3) 
     {
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-        mc.renderEngine.bindTexture(new ResourceLocation(Refstrings.MODID, "textures/gui/babychestgui.png"));
+        mc.renderEngine.bindTexture(new ResourceLocation(Tags.MODID, "textures/gui/babychestgui.png"));
         int x = (width - xSize) / 2;
         int y = (height - ySize) / 2;
         drawTexturedModalRect(x, y, 0, 0, xSize, ySize);

@@ -4,8 +4,8 @@ import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import baubles.common.container.InventoryBaubles;
 import baubles.common.lib.PlayerHandler;
-import com.dreammaster.lib.Refstrings;
 import com.dreammaster.main.NHItems;
+import com.dreammaster.Tags;
 import eu.usrv.yamcore.iface.IExtendedModItem;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -53,7 +53,7 @@ public final class WitherProtectionRing extends Item implements IBauble, IExtend
         _mItemName = pItemName;
         _mCreativeTab = pCreativeTab;
         
-        super.setTextureName(String.format("%s:item%s", Refstrings.MODID, _mItemName));
+        super.setTextureName(String.format("%s:item%s", Tags.MODID, _mItemName));
         super.setUnlocalizedName(_mItemName);
         super.setMaxDamage(0);
         super.setHasSubtypes(false);
@@ -70,7 +70,7 @@ public final class WitherProtectionRing extends Item implements IBauble, IExtend
     public IIcon icon;
     @Override
     public void registerIcons(IIconRegister reg) {
-        icon = reg.registerIcon(String.format("%s:item%s", Refstrings.MODID, _mItemName));
+        icon = reg.registerIcon(String.format("%s:item%s", Tags.MODID, _mItemName));
     }
     
     @Override

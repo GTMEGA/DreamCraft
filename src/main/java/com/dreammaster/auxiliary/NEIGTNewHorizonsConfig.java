@@ -1,11 +1,11 @@
 package com.dreammaster.auxiliary;
 
 import com.dreammaster.item.food.QuantumBread;
-import com.dreammaster.lib.Refstrings;
 import com.dreammaster.main.MainRegistry;
 
 import codechicken.nei.api.API;
 import codechicken.nei.api.IConfigureNEI;
+import com.dreammaster.Tags;
 import gregtech.api.util.GT_ModHandler;
 import net.minecraft.item.ItemStack;
 
@@ -77,7 +77,7 @@ public class NEIGTNewHorizonsConfig implements IConfigureNEI
     @Override
     public String getVersion()
     {
-        return Refstrings.VERSION;
+        return Tags.VERSION;
     }
 
 }

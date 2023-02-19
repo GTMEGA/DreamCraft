@@ -17,7 +17,6 @@ import gregtech.common.tileentities.automation.GT_MetaTileEntity_ChestBuffer;
 import gregtech.common.tileentities.generators.GT_MetaTileEntity_PlasmaGenerator;
 import gregtech.common.tileentities.machines.basic.*;
 import gregtech.loaders.preload.GT_Loader_MetaTileEntities;
-import gtPlusPlus.xmod.gregtech.api.metatileentity.implementations.base.GregtechMetaTransformerHiAmp;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
@@ -3835,24 +3834,24 @@ public class GT_Loader_Machines
 				"MAX -> OPV (Use Soft Mallet to invert)").getStackForm(1L));
 
 		if(Loader.isModLoaded("miscutils")) {
-			CustomItemList.Transformer_HA_UEV_UHV.set(new GregtechMetaTransformerHiAmp(
-					11989, "transformer.ha.tier.09", "UHV 16A Transformer", 9,
-					"UEV -> UHV (Use Soft Mallet to invert)").getStackForm(1L));
-			CustomItemList.Transformer_HA_UIV_UEV.set(new GregtechMetaTransformerHiAmp(
-					11910, "transformer.ha.tier.10", "UEV 16A Transformer",10,
-					"UIV -> UEV (Use Soft Mallet to invert)").getStackForm(1L));
-			CustomItemList.Transformer_HA_UMV_UIV.set(new GregtechMetaTransformerHiAmp(
-					11911, "transformer.ha.tier.11", "UIV 16A Transformer",11,
-					"UMV -> UIV (Use Soft Mallet to invert)").getStackForm(1L));
-			CustomItemList.Transformer_HA_UXV_UMV.set(new GregtechMetaTransformerHiAmp(
-					11912, "transformer.ha.tier.12", "UMV 16A Transformer",12,
-					"UXV -> UMV (Use Soft Mallet to invert)").getStackForm(1L));
-			CustomItemList.Transformer_HA_OPV_UXV.set(new GregtechMetaTransformerHiAmp(
-					11913, "transformer.ha.tier.13", "UXV 16A Transformer",13,
-					"OPV -> UXV (Use Soft Mallet to invert)").getStackForm(1L));
-			CustomItemList.Transformer_HA_MAXV_OPV.set(new GregtechMetaTransformerHiAmp(
-					11914, "transformer.ha.tier.14", "OPV 16A Transformer",14,
-					"MAX -> OPV (Use Soft Mallet to invert)").getStackForm(1L));
+//			CustomItemList.Transformer_HA_UEV_UHV.set(new GregtechMetaTransformerHiAmp(
+//					11989, "transformer.ha.tier.09", "UHV 16A Transformer", 9,
+//					"UEV -> UHV (Use Soft Mallet to invert)").getStackForm(1L));
+//			CustomItemList.Transformer_HA_UIV_UEV.set(new GregtechMetaTransformerHiAmp(
+//					11910, "transformer.ha.tier.10", "UEV 16A Transformer",10,
+//					"UIV -> UEV (Use Soft Mallet to invert)").getStackForm(1L));
+//			CustomItemList.Transformer_HA_UMV_UIV.set(new GregtechMetaTransformerHiAmp(
+//					11911, "transformer.ha.tier.11", "UIV 16A Transformer",11,
+//					"UMV -> UIV (Use Soft Mallet to invert)").getStackForm(1L));
+//			CustomItemList.Transformer_HA_UXV_UMV.set(new GregtechMetaTransformerHiAmp(
+//					11912, "transformer.ha.tier.12", "UMV 16A Transformer",12,
+//					"UXV -> UMV (Use Soft Mallet to invert)").getStackForm(1L));
+//			CustomItemList.Transformer_HA_OPV_UXV.set(new GregtechMetaTransformerHiAmp(
+//					11913, "transformer.ha.tier.13", "UXV 16A Transformer",13,
+//					"OPV -> UXV (Use Soft Mallet to invert)").getStackForm(1L));
+//			CustomItemList.Transformer_HA_MAXV_OPV.set(new GregtechMetaTransformerHiAmp(
+//					11914, "transformer.ha.tier.14", "OPV 16A Transformer",14,
+//					"MAX -> OPV (Use Soft Mallet to invert)").getStackForm(1L));
 
 			GT_ModHandler.addCraftingRecipe(CustomItemList.Transformer_HA_UEV_UHV.get(1L), bitsd,
 					new Object[] { "KBB", "CM ", "KBB", Character.valueOf('M'), CustomItemList.Transformer_UEV_UHV, Character.valueOf('C'),

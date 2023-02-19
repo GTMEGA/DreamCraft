@@ -1,7 +1,7 @@
 package com.dreammaster.item.food;
 
-import com.dreammaster.lib.Refstrings;
 import com.dreammaster.main.MainRegistry;
+import com.dreammaster.Tags;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.relauncher.Side;
 import net.minecraft.creativetab.CreativeTabs;
@@ -23,7 +23,7 @@ public final class QuantumBread extends ItemFood
     private QuantumBread()
     {
         super(1, 0.0F, true);
-        super.setTextureName(String.format("%s:item%s", Refstrings.MODID, QUANTUM_BREAD_NAME));
+        super.setTextureName(String.format("%s:item%s", Tags.MODID, QUANTUM_BREAD_NAME));
         setUnlocalizedName(QUANTUM_BREAD_NAME);
         setAlwaysEdible();
     }

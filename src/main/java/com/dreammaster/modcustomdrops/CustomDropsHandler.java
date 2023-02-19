@@ -1,7 +1,7 @@
 package com.dreammaster.modcustomdrops;
 
-import com.dreammaster.lib.Refstrings;
 import com.dreammaster.main.MainRegistry;
+import com.dreammaster.Tags;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import eu.usrv.yamcore.auxiliary.ItemDescriptor;
 import eu.usrv.yamcore.auxiliary.LogHelper;
@@ -37,7 +37,7 @@ public class CustomDropsHandler
 
     public CustomDropsHandler(File pConfigBaseDir)
     {
-        _mConfigFileName = String.format("config/%s/CustomDrops.xml", Refstrings.COLLECTIONID);
+        _mConfigFileName = String.format("config/%s/CustomDrops.xml", Tags.COLLECTIONID);
         // _mPersistedDB = new PersistedDataBase(pConfigBaseDir,
         // "CustomDrops.ser", Refstrings.COLLECTIONID);
         _mDeathDebugPlayers = new ArrayList<>();
@@ -242,7 +242,7 @@ public class CustomDropsHandler
         {
             if (_mPersistedDB == null)
             {
-                _mPersistedDB = new PersistedDataBase(DimensionManager.getCurrentSaveRootDirectory(), "CustomDrops.dat", Refstrings.COLLECTIONID);
+                _mPersistedDB = new PersistedDataBase(DimensionManager.getCurrentSaveRootDirectory(), "CustomDrops.dat", Tags.COLLECTIONID);
             }
 
             for (CustomDrops.CustomDrop.Drop dr : tCustomDrop.getDrops())

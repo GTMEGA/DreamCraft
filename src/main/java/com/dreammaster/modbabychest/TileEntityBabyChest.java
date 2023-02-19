@@ -1,6 +1,6 @@
 package com.dreammaster.modbabychest;
 
-import com.dreammaster.lib.Refstrings;
+import com.dreammaster.Tags;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ISidedInventory;
@@ -179,7 +179,7 @@ public class TileEntityBabyChest extends TileEntity implements IInventory, ISide
     @Override
     public String getInventoryName() 
     {
-        return String.format("%s.%s", Refstrings.MODID, "babychest");
+        return String.format("%s.%s", Tags.MODID, "babychest");
     }
 
     @Override

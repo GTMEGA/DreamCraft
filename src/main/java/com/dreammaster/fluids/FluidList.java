@@ -2,8 +2,8 @@ package com.dreammaster.fluids;
 
 
 import com.dreammaster.creativetab.ModTabList;
-import com.dreammaster.lib.Refstrings;
 import com.dreammaster.main.MainRegistry;
+import com.dreammaster.Tags;
 import eu.usrv.yamcore.fluids.ModFluidManager;
 import eu.usrv.yamcore.fluids.ModSimpleBaseFluid;
 import net.minecraft.block.material.Material;
@@ -30,7 +30,7 @@ public enum FluidList {
 		Fluid = pFluid;
 		if (Fluid != null)
 		{
-			Fluid.SetModID(Refstrings.MODID);
+			Fluid.SetModID(Tags.MODID);
 			Fluid.setCreativeTabName(pCreativeTabName);
 		}
 	}

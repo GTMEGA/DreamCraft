@@ -1,8 +1,8 @@
 package com.dreammaster.item;
 
 import com.dreammaster.creativetab.ModTabList;
-import com.dreammaster.lib.Refstrings;
 import com.dreammaster.main.MainRegistry;
+import com.dreammaster.Tags;
 import eu.usrv.yamcore.items.ModItemManager;
 import eu.usrv.yamcore.items.ModSimpleBaseItem;
 import net.minecraft.item.ItemStack;
@@ -573,7 +573,7 @@ public enum ItemList
     {
         Item = pItem;
         if (Item != null) {
-            Item.setModIDName(Refstrings.MODID);
+            Item.setModIDName(Tags.MODID);
         }
     }
 

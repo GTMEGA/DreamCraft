@@ -1,8 +1,8 @@
 package com.dreammaster.block;
 
 import com.dreammaster.creativetab.ModTabList;
-import com.dreammaster.lib.Refstrings;
 import com.dreammaster.main.MainRegistry;
+import com.dreammaster.Tags;
 import eu.usrv.yamcore.blocks.ModBlockManager;
 import eu.usrv.yamcore.blocks.ModSimpleBaseBlock;
 import net.minecraft.item.ItemStack;
@@ -61,7 +61,7 @@ public enum BlockList {
 	{
 		Block = pBlock;
 		if (Block != null) {
-            Block.setModIDName(Refstrings.MODID);
+            Block.setModIDName(Tags.MODID);
         }
 	}
 	

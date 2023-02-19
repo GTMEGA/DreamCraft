@@ -6,9 +6,9 @@ import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import baubles.common.container.InventoryBaubles;
 import baubles.common.lib.PlayerHandler;
-import com.dreammaster.lib.Refstrings;
 import com.dreammaster.main.MainRegistry;
 import com.dreammaster.main.NHItems;
+import com.dreammaster.Tags;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.relauncher.Side;
@@ -68,7 +68,7 @@ public final class OvenGlove extends Item implements IBauble, IExtendedModItem<O
     _mItemName = pItemName;
     _mCreativeTab = pCreativeTab;
 
-    super.setTextureName( String.format( "%s:item%s", Refstrings.MODID, _mItemName ) );
+    super.setTextureName( String.format( "%s:item%s", Tags.MODID, _mItemName ) );
     super.setUnlocalizedName( _mItemName );
     super.setMaxDamage( 0 );
     super.setHasSubtypes( true );
@@ -103,8 +103,13 @@ public final class OvenGlove extends Item implements IBauble, IExtendedModItem<O
   {
     for( int i = 0; i < 2; i++ )
     {
-      icons[i] = reg.registerIcon( String.format( "%s:item%s_%d", Refstrings.MODID, _mItemName, i ) );
+      icons[i] = reg.registerIcon( String.format( "%s:item%s_%d", Tags.MODID, _mItemName, i ) );
     }
+  }
+
+  @Override
+  public Item setCreativeTab(CreativeTabs p_77637_1_) {
+    return super.setCreativeTab(p_77637_1_);
   }
 
   @Override
