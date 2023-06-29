@@ -10,10 +10,10 @@ public class LoginHandler {
     @SuppressWarnings("unused")
     @SubscribeEvent
     public void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
-        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "===========================================" ));
-        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.AQUA + "Welcome to GT:MEGA  " + EnumChatFormatting.WHITE + CoreModConfig.ModPackVersion));
-        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.AQUA + "Join the discord at https://discord.gg/gtmega" ));
+        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "====================================" ));
+        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.AQUA + "Welcome to MEGA " + EnumChatFormatting.WHITE + CoreModConfig.ModPackVersion));
+        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.AQUA + "Join the discord at https://discord.gg/c8hFwgCMh5" ));
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.AQUA + "Check out the changelog channel!" ));
-        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "===========================================" ));
+        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "====================================" ));
     }
 }
