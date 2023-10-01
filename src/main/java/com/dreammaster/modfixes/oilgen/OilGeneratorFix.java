@@ -435,7 +435,7 @@ public class OilGeneratorFix extends ModFixBase
     }
     if( biomegenbase.rootHeight < -0.5F )
     {
-      randMod *= 1.8D;
+      randMod *= 1.2D;
     }
 
     if( MainRegistry.CoreConfig.OilFixConfig.OilBoostBiomes.contains( biomegenbase.biomeID ) ) {
