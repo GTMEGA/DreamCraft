@@ -703,30 +703,11 @@ public class GT_MachineRecipeLoader implements Runnable {
 
         GT_Values.RA.addCompressorRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Carbon, 1L), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Carbon, 1L), 300, 2);
         GT_Values.RA.addCompressorRecipe(GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Cobalt, 9L), GT_OreDictUnificator.get(OrePrefixes.block, Materials.Cobalt, 1L), 300, 2);
-//        GT_Values.RA.addCompressorRecipe(GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Ardite, 9L), GT_OreDictUnificator.get(OrePrefixes.block, Materials.Ardite, 1L), 300, 2);
-//        GT_Values.RA.addCompressorRecipe(GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Manyullyn, 9L), GT_OreDictUnificator.get(OrePrefixes.block, Materials.Manyullyn, 1L), 300, 2);
-//        GT_Values.RA.addCompressorRecipe(GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Alumite, 9L), GT_OreDictUnificator.get(OrePrefixes.block, Materials.Alumite, 1L), 300, 2);
-//        this.run2();
+
+        this.run2();
     }
 
-//    private void makeCoilRecipes() {
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Cupronickel, 8L), CustomItemList.AluminoSilicateWool.get(12L), GT_Utility.getIntegratedCircuit(3)}, Materials.Tin.getMolten(288L), ItemList.Casing_Coil_Cupronickel.get(1L), 100, 7);
-//
-//        //TODO: Rework other stuff (that depends on certain Heat Levels, mostly LuV+ stuff) so this can be wrapped into a oneliner.
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Cupronickel, 8L), CustomItemList.MicaInsulatorFoil.get(8L), GT_Utility.getIntegratedCircuit(3)}, Materials.Tin.getMolten(144L), ItemList.Casing_Coil_Cupronickel.get(1L), 200, 30);
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Kanthal, 8L), CustomItemList.MicaInsulatorFoil.get(12L), GT_Utility.getIntegratedCircuit(3)}, Materials.Cupronickel.getMolten(144L), ItemList.Casing_Coil_Kanthal.get(1L), 300, 120);
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Nichrome, 8L), CustomItemList.MicaInsulatorFoil.get(16L), GT_Utility.getIntegratedCircuit(3)}, Materials.Kanthal.getMolten(144L), ItemList.Casing_Coil_Nichrome.get(1L), 400, 480);
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.TungstenSteel, 8L), CustomItemList.MicaInsulatorFoil.get(20L), GT_Utility.getIntegratedCircuit(3)}, Materials.Nichrome.getMolten(144L), ItemList.Casing_Coil_TungstenSteel.get(1L), 500, 1920);
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.HSSG, 8L), CustomItemList.MicaInsulatorFoil.get(24L), GT_Utility.getIntegratedCircuit(3)}, Materials.TungstenSteel.getMolten(144L), ItemList.Casing_Coil_HSSG.get(1L), 600, 7680);
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.HSSS, 8L), CustomItemList.MicaInsulatorFoil.get(28L), GT_Utility.getIntegratedCircuit(3)}, Materials.HSSG.getMolten(144L), ItemList.Casing_Coil_HSSS.get(1L), 700, 7680);
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Naquadah, 8L), CustomItemList.MicaInsulatorFoil.get(32L), GT_Utility.getIntegratedCircuit(3)}, Materials.HSSS.getMolten(144L), ItemList.Casing_Coil_Naquadah.get(1L), 800, 30720);
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.NaquadahAlloy, 8L), CustomItemList.MicaInsulatorFoil.get(36L), GT_Utility.getIntegratedCircuit(3)}, Materials.Naquadah.getMolten(144L), ItemList.Casing_Coil_NaquadahAlloy.get(1L), 900, 30720);
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Trinium, 8L), CustomItemList.MicaInsulatorFoil.get(40L), GT_Utility.getIntegratedCircuit(3)}, Materials.NaquadahAlloy.getMolten(144L), ItemList.Casing_Coil_Trinium.get(1L), 1000, 122880);
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.ElectrumFlux, 8L), CustomItemList.MicaInsulatorFoil.get(44L), GT_Utility.getIntegratedCircuit(3)}, Materials.Trinium.getMolten(144L), ItemList.Casing_Coil_ElectrumFlux.get(1L), 1100, 500000);
-//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.DraconiumAwakened, 8L), CustomItemList.MicaInsulatorFoil.get(48L), GT_Utility.getIntegratedCircuit(3)}, Materials.ElectrumFlux.getMolten(144L), ItemList.Casing_Coil_AwakenedDraconium.get(1L), 1200, 2000000);
-//    }
-
-{
+    public void run2() {
         if (Loader.isModLoaded("AdvancedSolarPanel")) {
             GT_Values.RA.addPulveriserRecipe(GT_ModHandler.getModItem("AdvancedSolarPanel", "asp_crafting_items", 1L, 0), new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Sunnarium, 1L)}, new int[]{10000}, 300, 2);
             GT_Values.RA.addPulveriserRecipe(GT_ModHandler.getModItem("AdvancedSolarPanel", "asp_crafting_items", 1L, 9), new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.dustTiny, Materials.Sunnarium, 1L)}, new int[]{10000}, 30, 2);
@@ -2316,7 +2297,7 @@ public class GT_MachineRecipeLoader implements Runnable {
         }
     }
 
-    private final static boolean make_floppy(String displayname, String name, int color, int circuit) {
+    private static boolean make_floppy(String displayname, String name, int color, int circuit) {
         ItemStack floppy = GT_ModHandler.getModItem("OpenComputers", "item", 1L, 4);
         NBTTagCompound tag = new NBTTagCompound(),
                 subtag = new NBTTagCompound();
@@ -2331,7 +2312,7 @@ public class GT_MachineRecipeLoader implements Runnable {
         return GT_Values.RA.addLaserEngraverRecipe(GT_ModHandler.getModItem("OpenComputers", "item", 1L, 4), GT_Utility.getIntegratedCircuit(circuit), floppy, 200, 120);
     }
 
-    private final static boolean make_lua_bios() {
+    private static boolean make_lua_bios() {
         ItemStack lua = GT_ModHandler.getModItem("OpenComputers", "eeprom", 1L, 0);
         NBTTagCompound tag = new NBTTagCompound(),
                 subtag = new NBTTagCompound();
