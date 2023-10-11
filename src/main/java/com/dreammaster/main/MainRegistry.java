@@ -2,9 +2,6 @@ package com.dreammaster.main;
 
 import com.dreammaster.Tags;
 import com.dreammaster.TwilightForest.TF_Loot_Chests;
-import com.dreammaster.bartworksHandler.BacteriaRegistry;
-import com.dreammaster.bartworksHandler.PyrolyseOvenLoader;
-import com.dreammaster.bartworksHandler.VoidMinerLoader;
 import com.dreammaster.baubles.OvenGlove;
 import com.dreammaster.baubles.WitherProtectionRing;
 import com.dreammaster.block.BlockList;
@@ -12,7 +9,6 @@ import com.dreammaster.command.*;
 import com.dreammaster.config.CoreModConfig;
 import com.dreammaster.creativetab.ModTabList;
 import com.dreammaster.fluids.FluidList;
-import com.dreammaster.galacticgreg.SpaceDimRegisterer;
 import com.dreammaster.gthandler.*;
 import com.dreammaster.item.ItemList;
 import com.dreammaster.loginhandler.LoginHandler;
@@ -34,7 +30,6 @@ import com.dreammaster.oredict.OreDictHandler;
 import com.dreammaster.railcraftStones.NH_GeodePopulator;
 import com.dreammaster.railcraftStones.NH_QuarryPopulator;
 import com.dreammaster.witchery.WitcheryPlugin;
-import com.github.bartimaeusnek.bartworks.system.material.WerkstoffLoader;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
@@ -109,8 +104,6 @@ public class MainRegistry
     public static CoreModDispatcher NW;
     public static Random Rnd;
     public static LogHelper Logger = new LogHelper(Tags.MODID);
-    private static SpaceDimRegisterer SpaceDimReg;
-    private static BacteriaRegistry BacteriaRegistry;
 
     public static void AddLoginError(String pMessage)
     {
@@ -268,11 +261,6 @@ public class MainRegistry
             FMLCommonHandler.instance().bus().register(new NotificationTickHandler());
         }
 	    
-	    if (Loader.isModLoaded("bartworks"))
-	    {
-            BacteriaRegistry = new BacteriaRegistry();
-	    }
-
         Logger.debug("LOAD abandoned GT++ Aspects");
         if (Loader.isModLoaded("Thaumcraft"))
         {
@@ -323,34 +311,6 @@ public class MainRegistry
         if(CoreConfig.OreDictItems_Enabled)
         OreDictHandler.register_all();
 
-        GregTech_API.sAfterGTPostload.add(() -> {
-            Logger.debug("Add Runnable to GT to create pyrolyse oven logWood recipes");
-            PyrolyseOvenLoader.registerRecipes();
-        });
-
-        // Register Dimensions in GalacticGregGT5
-        if (Loader.isModLoaded("galacticgreg"))
-        {
-            if (Loader.isModLoaded("bartworks")) {
-                GregTech_API.sAfterGTPostload.add(() -> {
-                    Logger.debug("Add Runnable to GT to add Ores to BW VoidMiner in the DeepDark");
-                    VoidMinerLoader.initDeepDark();
-                });
-            }
-
-            SpaceDimReg = new SpaceDimRegisterer();
-            if (!SpaceDimReg.Init())
-            {
-                Logger.error("Unable to register SpaceDimensions; You are probably using the wrong Version of GalacticGreg");
-                AddLoginError("[SpaceDim] Unable to register SpaceDimensions. Wrong Version of GGreg found!");
-            }
-            else
-            {
-                Logger.debug("Registering SpaceDimensions");
-                SpaceDimReg.Register();
-            }
-
-        }
         if (Loader.isModLoaded("TwilightForest"))
         TF_Loot_Chests.init();
     }
@@ -441,16 +401,6 @@ public class MainRegistry
         // Don't call enableModFixes() yourself
         // Don't register fixes after enableModFixes() has been executed
         ModFixesMaster.enableModFixes();
-        if (Loader.isModLoaded("bartworks")) {
-            Logger.debug("Add Bacteria Stuff to BartWorks");
-            BacteriaRegistry.runAllPostinit();
-
-            Logger.debug("Nerf Platinum Metal Cauldron Cleaning");
-            GT_MetaGenerated_Item_01.registerCauldronCleaningFor(Materials.Platinum, WerkstoffLoader.PTMetallicPowder.getBridgeMaterial());
-            GT_MetaGenerated_Item_01.registerCauldronCleaningFor(Materials.Osmium, WerkstoffLoader.IrOsLeachResidue.getBridgeMaterial());
-            GT_MetaGenerated_Item_01.registerCauldronCleaningFor(Materials.Iridium, WerkstoffLoader.IrLeachResidue.getBridgeMaterial());
-            GT_MetaGenerated_Item_01.registerCauldronCleaningFor(Materials.Palladium, WerkstoffLoader.PDMetallicPowder.getBridgeMaterial());
-        }
     }
 
     /**
