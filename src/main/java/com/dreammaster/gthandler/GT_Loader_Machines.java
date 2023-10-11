@@ -4331,7 +4331,7 @@ public class GT_Loader_Machines
 				bitsd,
 				new Object[]{"SsS", "VMV", "SXS",
 						'M', ItemList.Hull_ULV,
-						'V', OrePrefixes.gearGtSmall.get(Materials.AnyBronze),
+						'V', OrePrefixes.gearGtSmall.get(Materials.Brass),
 						'S', OrePrefixes.screw.get(Materials.AnyIron),
 						'X', OreDictNames.craftingPiston});
 
