@@ -2,20 +2,32 @@
 
 repositories {
     maven {
-        name = "FalsePattern Jenkins Mirror"
-        url = "https://mvn.falsepattern.com/usrv/"
-    }
-    maven {
-        name = "chickenbones"
-        url = "http://chickenbones.net/maven/"
-    }
-    maven {
         name "IC2 Maven"
         url "https://mvn.falsepattern.com/ic2"
         metadataSources {
             mavenPom()
             artifact()
         }
+    }
+    maven {
+        name = "FalsePattern CurseMaven Mirror"
+        url = "https://mvn.falsepattern.com/cursemaven/"
+    }
+    maven {
+        name = "FalsePattern Maven"
+        url = "https://mvn.falsepattern.com/releases"
+    }
+    maven {
+        name = "FalsePattern Jenkins Mirror"
+        url = "https://mvn.falsepattern.com/usrv/"
+    }
+    maven {
+        name = "FalsePattern GTMEGA Releases"
+        url = "https://mvn.falsepattern.com/gtmega_releases/"
+    }
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
     }
     maven {
         url = "http://maven.cil.li/"
@@ -38,13 +50,5 @@ repositories {
     maven {
         name = "jitpack.io"
         url = "https://jitpack.io"
-    }
-    maven {
-        name = "FalsePattern GTMEGA Maven"
-        url = "https://mvn.falsepattern.com/gtmega_releases/"
-    }
-    maven {
-        name = "cursemaven"
-        url = "https://mvn.falsepattern.com/cursemaven/"
     }
 }
