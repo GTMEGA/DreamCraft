@@ -7,36 +7,22 @@ dependencies {
 //        transitive = false
 //    }
     compile("com.github.GTNewHorizons:Yamcl:0.5.84:dev")
-    compile("com.azanor.baubles:Baubles:1.7.10-1.0.1.10:deobf") {
-        transitive = true
-    }
+    compile("com.azanor.baubles:Baubles:1.7.10-1.0.1.10:deobf")
     compileOnly("com.github.GTNewHorizons:AppleCore:3.2.0:dev") {
         transitive = false
     }
-    compile("codechicken:codechickencore-mc1.7.10:1.0.9-gtmega:dev") {
-        transitive = false;
-    }
 
-    compile("codechicken:codechickenlib-mc1.7.10:1.1.4-gtmega:dev"){
-        transitive = false;
-    }
+    implementation ("codechicken:codechickencore-mc1.7.10:1.0.9-gtmega:dev")
+    implementation ("codechicken:codechickenlib-mc1.7.10:1.1.4-gtmega:dev")
+    implementation ("codechicken:notenoughitems-mc1.7.10:2.1.5-gtmega:dev")
 
-    compile("codechicken:notenoughitems-mc1.7.10:2.1.5-gtmega:dev"){
-        transitive = false;
-    }
-    compile("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
-    compile("gtmega:gt5u-mc1.7.10:5.30.1:dev") {
-        transitive = false
-    }
-//    compile(deobf("https://mvn.falsepattern.com/gtmega_releases/gtmega/bartworks-mc1.7.10/0.6.0-gtmega/bartworks-mc1.7.10-0.6.0-gtmega.jar"))
+    implementation (deobf("https://mvn.falsepattern.com/gtmega_releases/gtmega/bartworks-mc1.7.10/0.6.0-gtmega/bartworks-mc1.7.10-0.6.0-gtmega.jar"))
 
-    compileOnly("com.github.GTNewHorizons:EnderCore:master-SNAPSHOT:dev") {
-        transitive = false
-    }
+    implementation ("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
+    api ("gtmega:gt5u-mc1.7.10:5.30.1:dev")
 
-    compileOnly("appeng:appliedenergistics2:rv3-beta-22:dev") {
-        transitive = false
-    }
+    implementation ("gtmega:ae2-mc1.7.10:rv3-beta.58-gtmega:dev")
+
     compile("com.github.GTNewHorizons:Railcraft:master-SNAPSHOT:dev") {
         transitive = false
     }
@@ -46,9 +32,8 @@ dependencies {
     compile('com.github.GTNewHorizons:EnderCore:0.2.9:dev') {
         transitive = false
     }
-    compile("thaumcraft:Thaumcraft:1.7.10-4.2.3.5:dev") {
-        transitive = false
-    }
+
+    implementation ("thaumcraft:Thaumcraft:1.7.10-4.2.3.5:dev")
 
     compile "com.github.GTNewHorizons:BuildCraft:7.1.27:dev"
     compile ":HardcoreEnderExpansion:MC-1.7.10_v1.8.6"
