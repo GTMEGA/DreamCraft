@@ -45,7 +45,7 @@ dependencies {
 
     implementation ("gtmega:ae2-mc1.7.10:rv3-beta.58-gtmega:dev")
 
-    implementation ("com.github.GTNewHorizons:Railcraft:master-SNAPSHOT:dev") {
+    implementation ("com.github.GTNewHorizons:Railcraft:9.15.0:dev") {
         transitive = false;
     }
 
