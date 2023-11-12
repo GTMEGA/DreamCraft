@@ -1,4 +1,16 @@
-# GT-NewHorizons-CoreMod
+# MEGA/NH Coremod to be replaced by HTX ect.
+So where do things go now?
+- Patches / Bugfixes go into Blendtronic.
+- New items and fluids go into HTX.
+- New multi content goes into OBAMA.
+- New GT content will go into GT.
+- ALL NEW recipes go into scripts.
+- New machine blocks go into OBAMA or GT.
+- New decorative blocks go into CHISEL.
+
+
+---
+### GT-NewHorizons-CoreMod
 Master Branch: [![Build Status](http://jenkins.usrv.eu:8080/buildStatus/icon?job=GTNewHorizons-Core-Mod)](http://jenkins.usrv.eu:8080/job/GTNewHorizons-Core-Mod/)
 
 Core Mod for the GT New Horizons pack
@@ -16,5 +28,5 @@ Some of the changes include:
 
 Full source code and commit history available on GitHub: https://github.com/GTNewHorizons/NewHorizonsCoreMod
 
-# Copyright / License / Modpack usage
+## Copyright / License / Modpack usage
 You may use this mod in any modpack you want to. You may also fork this repository and continue to develop this mod to cover your own ideas. Pullrequests are welcome.
