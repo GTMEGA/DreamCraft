@@ -1333,7 +1333,7 @@ public class GT_MachineRecipeLoader implements Runnable {
         GT_Values.RA.addAssemblerRecipe(new ItemStack[]{ItemList.QuantumEye.get(1L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Titanium, 4), GT_OreDictUnificator.get(OrePrefixes.stick, Materials.Platinum, 1), GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Data, 1L),}, GT_Values.NF, ItemList.Sensor_EV.get(1L), 200, 240);
         GT_Values.RA.addAssemblerRecipe(new ItemStack[]{ItemList.QuantumStar.get(1L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.TungstenSteel, 4), GT_OreDictUnificator.get(OrePrefixes.stick, Materials.Iridium, 1), GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Elite, 1L),}, GT_Values.NF, ItemList.Sensor_IV.get(1L), 200, 480);
 
-        GT_Values.RA.addSifterRecipe(GT_OreDictUnificator.get(OrePrefixes.crushedPurified, Materials.Cinnabar, 1L), new ItemStack[]{Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Cinnabar.getDust(1)}, new int[]{100, 300, 500, 1000, 1000, 1500, 2300, 2500, 3500}, 7200, 30);
+        GT_Values.RA.addSifterRecipe(GT_OreDictUnificator.get(OrePrefixes.crushedPurified, Materials.Cinnabar, 1L), new ItemStack[]{Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Mercury.getGems(1), Materials.Cinnabar.getDust(1)}, new int[]{100, 300, 500, 1000, 1000, 1500, 2300, 2500, 3500}, 600, 16);
 
         if (Loader.isModLoaded("thaumicbases"))
             GT_Values.RA.addPulveriserRecipe(GT_ModHandler.getModItem("thaumicbases", "resource", 1L, 7), new ItemStack[]{GT_ModHandler.getModItem("thaumicbases", "tobaccoPowder", 1L, 0)}, new int[]{10000}, 10, 2);
@@ -1364,7 +1364,7 @@ public class GT_MachineRecipeLoader implements Runnable {
         //recipes for everything that uses sand
         for (int i = 0; i < OreDictionary.getOres("sand").size(); ++i) {
             GT_Values.RA.addPulveriserRecipe(OreDictionary.getOres("sand").get(i), new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L)}, new int[]{10000, 2500, 2000, 1500}, 200, 8);
-            GT_Values.RA.addAlloySmelterRecipe(OreDictionary.getOres("sand").get(i), new ItemStack(Items.clay_ball), com.dreammaster.item.ItemList.CokeOvenBrick.getIS().splitStack(2), 200, 8);
+            GT_Values.RA.addAlloySmelterRecipe(OreDictionary.getOres("sand").get(i), new ItemStack(Items.clay_ball), com.dreammaster.item.ItemList.CokeOvenBrick.getIS().splitStack(2), 120, 8);
         }
 
         GT_Values.RA.addChemicalRecipe(new ItemStack(Items.ghast_tear), GT_Utility.getIntegratedCircuit(1), Materials.Water.getFluid(1000L), Materials.SaltWater.getFluid(1000L), Materials.Potassium.getDustTiny(1), Materials.Lithium.getDustTiny(1), 400, 30, false);

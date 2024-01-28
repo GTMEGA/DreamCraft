@@ -171,16 +171,16 @@ public class GT_CraftingRecipeLoader extends gregtech.loaders.postload.GT_Crafti
         //todo read raw t5 orb
         GT_ModHandler.addCraftingRecipe(CustomItemList.RawOrbTier6.get(1L), bits, new Object[]{"XTX", "POP", "PPP", 'X', OrePrefixes.screw.get(Materials.Iridium), 'T', ToolDictNames.craftingToolScrewdriver, 'P', OrePrefixes.plate.get(Materials.Plutonium241), 'O', CustomItemList.ReinforcedGlassLense.get(1L)});
         
-        GT_ModHandler.addCraftingRecipe(CustomItemList.UnfiredClayBrick.get(8L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"CCC", "CFC", "CCC", 'C', new ItemStack(Items.clay_ball, 1, 0), 'F', CustomItemList.WoodenBrickForm});
-        GT_ModHandler.addShapelessCraftingRecipe(CustomItemList.UnfiredClayBrick.get(1L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{new ItemStack(Items.clay_ball, 1, 0), CustomItemList.WoodenBrickForm});
+//        GT_ModHandler.addCraftingRecipe(CustomItemList.UnfiredClayBrick.get(8L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"CCC", "CFC", "CCC", 'C', new ItemStack(Items.clay_ball, 1, 0), 'F', CustomItemList.WoodenBrickForm});
+//        GT_ModHandler.addShapelessCraftingRecipe(CustomItemList.UnfiredClayBrick.get(1L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{new ItemStack(Items.clay_ball, 1, 0), CustomItemList.WoodenBrickForm});
         if (Loader.isModLoaded(aTextTConstruct)) {
         	GT_ModHandler.addCraftingRecipe(CustomItemList.UnfiredSearedBrick.get(8L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"GGG", "GFG", "GGG", 'G', GT_ModHandler.getModItem(aTextTConstruct, "CraftedSoil", 1L, 1), 'F', CustomItemList.WoodenBrickForm});
         	GT_ModHandler.addShapelessCraftingRecipe(CustomItemList.UnfiredSearedBrick.get(1L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{GT_ModHandler.getModItem(aTextTConstruct, "CraftedSoil", 1L, 1), CustomItemList.WoodenBrickForm});
         	GT_ModHandler.addCraftingRecipe(CustomItemList.UnfiredSlimeSoulBrick.get(8L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"SSS", "SFS", "SSS", 'S', GT_ModHandler.getModItem(aTextTConstruct, "CraftedSoil", 1L, 6), 'F', CustomItemList.WoodenBrickForm});    
         	GT_ModHandler.addShapelessCraftingRecipe(CustomItemList.UnfiredSlimeSoulBrick.get(1L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{GT_ModHandler.getModItem(aTextTConstruct, "CraftedSoil", 1L, 6), CustomItemList.WoodenBrickForm});
         }
-        GT_ModHandler.addCraftingRecipe(CustomItemList.UnfiredCokeOvenBrick.get(3L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"CCC", "SFS", "SSS", 'C', new ItemStack(Items.clay_ball, 1, 0), 'S', GT_OreDictUnificator.get("sand", 1L), 'F', CustomItemList.WoodenBrickForm});
-        GT_ModHandler.addShapelessCraftingRecipe(CustomItemList.UnfiredCokeOvenBrick.get(1L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{new ItemStack(Items.clay_ball, 1, 0), new ItemStack(Blocks.sand, 1, 0), OrePrefixes.block.get(Materials.Sand), CustomItemList.WoodenBrickForm});
+       // GT_ModHandler.addCraftingRecipe(CustomItemList.UnfiredCokeOvenBrick.get(3L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"CCC", "SFS", "SSS", 'C', new ItemStack(Items.clay_ball, 1, 0), 'S', GT_OreDictUnificator.get("sand", 1L), 'F', CustomItemList.WoodenBrickForm});
+        //GT_ModHandler.addShapelessCraftingRecipe(CustomItemList.UnfiredCokeOvenBrick.get(1L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{new ItemStack(Items.clay_ball, 1, 0), new ItemStack(Blocks.sand, 1, 0), OrePrefixes.block.get(Materials.Sand), CustomItemList.WoodenBrickForm});
         
         GT_ModHandler.addCraftingRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_ModHandler.RecipeBits.NOT_REMOVABLE | GT_ModHandler.RecipeBits.BUFFERED, new Object[]{"S", "m", 'S', new ItemStack(Blocks.sand, 1, 32767)});
         GT_ModHandler.addCraftingRecipe(GT_OreDictUnificator.get(OrePrefixes.dustTiny, Materials.Flint, 1L), GT_ModHandler.RecipeBits.NOT_REMOVABLE  | GT_ModHandler.RecipeBits.BUFFERED, new Object[]{"F", "m", 'F', new ItemStack(Items.flint, 1, 0)});
