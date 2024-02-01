@@ -275,8 +275,7 @@ public class MainRegistry
             FMLCommonHandler.instance().bus().register(new LoginHandler());
         }
         Logger.warn( "==================================================" );
-        Logger.warn( "Welcome to GT:MEGA " + CoreModConfig.ModPackVersion );
-        Logger.warn( "Please bring comments to " + "https://discord.gg/gtmega" );
+        Logger.warn( "This is: MEGA " + CoreModConfig.ModPackVersion );
         Logger.warn( "==================================================" );
 
         MinecraftForge.EVENT_BUS.register(new OvenGlove.EventHandler());
