@@ -12,6 +12,7 @@ import static gregtech.api.enums.GT_Values.W;
 
 public enum CustomItemList implements IItemContainer
 {
+	//TODO: Cross reference @ItemList.java and remove enums below so the mod can actually register items again.
 	Casing_Pyrolyse,
 	Machine_Multi_AirFilter,Casing_AirFilter_Vent,Casing_AirFilter_Turbine,
 	Hatch_Dynamo_UEV, Hatch_Dynamo_UIV, Hatch_Dynamo_UMV, Hatch_Dynamo_UXV, Hatch_Dynamo_OPV,

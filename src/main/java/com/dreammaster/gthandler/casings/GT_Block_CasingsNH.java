@@ -1,7 +1,7 @@
 package com.dreammaster.gthandler.casings;
 
 import com.dreammaster.gthandler.CustomItemList;
-import com.dreammaster.gthandler.multiAirFilter.GT_MetaTileEntity_AirFilter;
+//import com.dreammaster.gthandler.multiAirFilter.GT_MetaTileEntity_AirFilter;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import gregtech.api.enums.Dyes;
@@ -82,74 +82,74 @@ public class GT_Block_CasingsNH extends GT_Block_Casings_Abstract {
         return active ? Textures.BlockIcons.TURBINE_ACTIVE[iconIndex].getIcon() : Textures.BlockIcons.TURBINE[iconIndex].getIcon();
     }
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public IIcon getIcon(IBlockAccess aWorld, int xCoord, int yCoord, int zCoord, int aSide) {
-        int tMeta = aWorld.getBlockMetadata(xCoord, yCoord, zCoord);
-        if(tMeta>0 && tMeta<9 || tMeta==15){
-            return getIcon(aSide,tMeta);
-        }
-        if (tMeta != 0 || !mConnectedMachineTextures) {
-            return getIcon(aSide, tMeta);
-        }
-        if (aSide==1) {
-            TileEntity tTileEntity;
-            IMetaTileEntity tMetaTileEntity;
-
-            for(int xi=-2;xi<=2;xi++){
-                for(int zi=-2;zi<=2;zi++){
-                    if(null != (tTileEntity = aWorld.getTileEntity(xCoord+xi, Math.max(yCoord - 3, 0),zCoord+zi)) &&
-                            tTileEntity instanceof IGregTechTileEntity &&
-                            null != (tMetaTileEntity = ((IGregTechTileEntity)tTileEntity).getMetaTileEntity()) &&
-                            tMetaTileEntity instanceof GT_MetaTileEntity_AirFilter){
-                        boolean active=false;
-                        if (((IGregTechTileEntity) tTileEntity).isActive()) {
-                            active = true;
-                        }
-                        //check for direction and placement and apply the texture
-                        switch(((IGregTechTileEntity) tTileEntity).getFrontFacing()){
-                            case 2:
-                                if(xi<2 && xi>-2 && zi<1) {//if invalid position ignore (aka too far away)
-                                    try {
-                                        return getTurbineCasing(-xi + 1 - zi * 3, active);
-                                    } catch (Exception e) {
-                                        return Textures.BlockIcons.MACHINE_CASING_SOLID_STEEL.getIcon();
-                                    }
-                                }
-                                break;
-                            case 3:
-                                if(xi<2 && xi>-2 && zi>-1) {
-                                    try {
-                                        return getTurbineCasing(-xi+1+(2-zi)*3, active);
-                                    }catch(Exception e){
-                                        return Textures.BlockIcons.MACHINE_CASING_SOLID_STEEL.getIcon();
-                                    }
-                                }
-                                break;
-                            case 4:
-                                if(zi<2 && zi>-2 && xi<1) {
-                                    try {
-                                        return getTurbineCasing(-xi + (1 - zi) * 3, active);
-                                    } catch (Exception e) {
-                                        return Textures.BlockIcons.MACHINE_CASING_SOLID_STEEL.getIcon();
-                                    }
-                                }
-                                break;
-                            case 5:
-                                if(zi<2 && zi>-2 && xi>-1) {
-                                    try {
-                                        return getTurbineCasing(-xi + 2 + (1 - zi) * 3, active);
-                                    } catch (Exception e) {
-                                        return Textures.BlockIcons.MACHINE_CASING_SOLID_STEEL.getIcon();
-                                    }
-                                }
-                        }
-                    }
-                }
-            }
-        }
-        return Textures.BlockIcons.MACHINE_CASING_SOLID_STEEL.getIcon();
-    }
+//    @Override
+//    @SideOnly(Side.CLIENT)
+//    public IIcon getIcon(IBlockAccess aWorld, int xCoord, int yCoord, int zCoord, int aSide) {
+//        int tMeta = aWorld.getBlockMetadata(xCoord, yCoord, zCoord);
+//        if(tMeta>0 && tMeta<9 || tMeta==15){
+//            return getIcon(aSide,tMeta);
+//        }
+//        if (tMeta != 0 || !mConnectedMachineTextures) {
+//            return getIcon(aSide, tMeta);
+//        }
+//        if (aSide==1) {
+//            TileEntity tTileEntity;
+//            IMetaTileEntity tMetaTileEntity;
+//
+//            for(int xi=-2;xi<=2;xi++){
+//                for(int zi=-2;zi<=2;zi++){
+//                    if(null != (tTileEntity = aWorld.getTileEntity(xCoord+xi, Math.max(yCoord - 3, 0),zCoord+zi)) &&
+//                            tTileEntity instanceof IGregTechTileEntity &&
+//                            null != (tMetaTileEntity = ((IGregTechTileEntity)tTileEntity).getMetaTileEntity()) &&
+//                            tMetaTileEntity instanceof GT_MetaTileEntity_AirFilter){
+//                        boolean active=false;
+//                        if (((IGregTechTileEntity) tTileEntity).isActive()) {
+//                            active = true;
+//                        }
+//                        //check for direction and placement and apply the texture
+//                        switch(((IGregTechTileEntity) tTileEntity).getFrontFacing()){
+//                            case 2:
+//                                if(xi<2 && xi>-2 && zi<1) {//if invalid position ignore (aka too far away)
+//                                    try {
+//                                        return getTurbineCasing(-xi + 1 - zi * 3, active);
+//                                    } catch (Exception e) {
+//                                        return Textures.BlockIcons.MACHINE_CASING_SOLID_STEEL.getIcon();
+//                                    }
+//                                }
+//                                break;
+//                            case 3:
+//                                if(xi<2 && xi>-2 && zi>-1) {
+//                                    try {
+//                                        return getTurbineCasing(-xi+1+(2-zi)*3, active);
+//                                    }catch(Exception e){
+//                                        return Textures.BlockIcons.MACHINE_CASING_SOLID_STEEL.getIcon();
+//                                    }
+//                                }
+//                                break;
+//                            case 4:
+//                                if(zi<2 && zi>-2 && xi<1) {
+//                                    try {
+//                                        return getTurbineCasing(-xi + (1 - zi) * 3, active);
+//                                    } catch (Exception e) {
+//                                        return Textures.BlockIcons.MACHINE_CASING_SOLID_STEEL.getIcon();
+//                                    }
+//                                }
+//                                break;
+//                            case 5:
+//                                if(zi<2 && zi>-2 && xi>-1) {
+//                                    try {
+//                                        return getTurbineCasing(-xi + 2 + (1 - zi) * 3, active);
+//                                    } catch (Exception e) {
+//                                        return Textures.BlockIcons.MACHINE_CASING_SOLID_STEEL.getIcon();
+//                                    }
+//                                }
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//        return Textures.BlockIcons.MACHINE_CASING_SOLID_STEEL.getIcon();
+//    }
 
     @Override
     public int colorMultiplier(IBlockAccess aWorld, int aX, int aY, int aZ) {
