@@ -275,10 +275,10 @@ public class GT_Loader_Items
 		CustomItemList.SnowQueenBlood.set(ItemList.SnowQueenBlood.getIS());
 //		CustomItemList.AdvancedBoard.set(ItemList.AdvancedBoard.getIS());
 //		CustomItemList.AdvancedProcessorBoard.set(ItemList.AdvancedProcessorBoard.getIS());
-//		CustomItemList.HighEnergyFlowCircuit.set(ItemList.HighEnergyFlowCircuit.getIS());
-//		CustomItemList.NanoCircuit.set(ItemList.NanoCircuit.getIS());
-//		CustomItemList.PikoCircuit.set(ItemList.PikoCircuit.getIS());
-//		CustomItemList.QuantumCircuit.set(ItemList.QuantumCircuit.getIS());
+		CustomItemList.HighEnergyFlowCircuit.set(ItemList.HighEnergyFlowCircuit.getIS());
+		CustomItemList.NanoCircuit.set(ItemList.NanoCircuit.getIS());
+		CustomItemList.PikoCircuit.set(ItemList.PikoCircuit.getIS());
+		CustomItemList.QuantumCircuit.set(ItemList.QuantumCircuit.getIS());
 //		CustomItemList.CarbonPartBoots.set(ItemList.CarbonPartBoots.getIS());
 //		CustomItemList.CarbonPartChestplate.set(ItemList.CarbonPartChestplate.getIS());
 //		CustomItemList.CarbonPartHelmet.set(ItemList.CarbonPartHelmet.getIS());
@@ -299,7 +299,7 @@ public class GT_Loader_Items
 //		CustomItemList.HeavyDutyAlloyIngotT7.set(ItemList.HeavyDutyAlloyIngotT7.getIS());
 //		CustomItemList.HeavyDutyAlloyIngotT8.set(ItemList.HeavyDutyAlloyIngotT8.getIS());
 //		CustomItemList.HeavyDutyAlloyIngotT9.set(ItemList.HeavyDutyAlloyIngotT9.getIS());
-//        CustomItemList.HighEnergyCircuitParts.set(ItemList.HighEnergyCircuitParts.getIS());
+        CustomItemList.HighEnergyCircuitParts.set(ItemList.HighEnergyCircuitParts.getIS());
 //        CustomItemList.EngravedDiamondCrystalChip.set(ItemList.EngravedDiamondCrystalChip.getIS());
         CustomItemList.EngravedEnergyChip.set(ItemList.EngravedEnergyChip.getIS());
 //		CustomItemList.NanoBoard.set(ItemList.NanoBoard.getIS());
@@ -413,7 +413,7 @@ public class GT_Loader_Items
 		CustomItemList.RawOrbTier5.set(ItemList.RawOrbTier5.getIS());
 		CustomItemList.RawOrbTier6.set(ItemList.RawOrbTier6.getIS());
 		CustomItemList.TeleposerFrame.set(ItemList.TeleposerFrame.getIS());
-//		CustomItemList.MysteriousCrystal.set(ItemList.MysteriousCrystal.getIS());
+		CustomItemList.MysteriousCrystal.set(ItemList.MysteriousCrystal.getIS());
 		CustomItemList.WoodenCasing.set(ItemList.WoodenCasing.getIS());
 		CustomItemList.EssentiaCircuit.set(ItemList.EssentiaCircuit.getIS());
 //		CustomItemList.EngineeringProcessorEssentiaPulsatingCore.set(ItemList.EngineeringProcessorEssentiaPulsatingCore.getIS());
@@ -452,7 +452,7 @@ public class GT_Loader_Items
 //		CustomItemList.MediumFuelCanister.set(ItemList.MediumFuelCanister.getIS());
 //		CustomItemList.LargeFuelCanister.set(ItemList.LargeFuelCanister.getIS());
 //		CustomItemList.ExtraLargeFuelCanister.set(ItemList.ExtraLargeFuelCanister.getIS());
-//		CustomItemList.MysteriousCrystalPlate.set(ItemList.MysteriousCrystalPlate.getIS());
+		CustomItemList.MysteriousCrystalPlate.set(ItemList.MysteriousCrystalPlate.getIS());
 		CustomItemList.LedoxPlate.set(ItemList.LedoxPlate.getIS());
 //		CustomItemList.QuantinumPlate.set(ItemList.QuantinumPlate.getIS());
 //		CustomItemList.CallistoIcePlate.set(ItemList.CallistoIcePlate.getIS());
@@ -504,7 +504,7 @@ public class GT_Loader_Items
 //		CustomItemList.VegaBStoneDust.set(ItemList.VegaBStoneDust.getIS());
 //		CustomItemList.BarnardaEStoneDust.set(ItemList.BarnardaEStoneDust.getIS());
 //		CustomItemList.BarnardaFStoneDust.set(ItemList.BarnardaFStoneDust.getIS());
-//		CustomItemList.MysteriousCrystalDust.set(ItemList.MysteriousCrystalDust.getIS());
+		CustomItemList.MysteriousCrystalDust.set(ItemList.MysteriousCrystalDust.getIS());
 		CustomItemList.IndustryFrame.set(ItemList.IndustryFrame.getIS());
 		CustomItemList.TCetiEStoneDust.set(ItemList.TCetiEStoneDust.getIS());
 //		CustomItemList.AdsorptionFilterCasing.set(ItemList.AdsorptionFilterCasing.getIS());
@@ -558,9 +558,9 @@ public class GT_Loader_Items
 //		CustomItemList.IrradiantReinforcedNeutroniumPlate.set(ItemList.IrradiantReinforcedNeutroniumPlate.getIS());
 //		CustomItemList.IrradiantReinforcedBedrockiumPlate.set(ItemList.IrradiantReinforcedBedrockiumPlate.getIS());
 		CustomItemList.QuantumCrystal.set(ItemList.QuantumCrystal.getIS());
-//		CustomItemList.MysteriousCrystalLens.set(ItemList.MysteriousCrystalLens.getIS());
-//		CustomItemList.MysteriousCrystalGemFlawless.set(ItemList.MysteriousCrystalGemFlawless.getIS());
-//		CustomItemList.MysteriousCrystalGemExquisite.set(ItemList.MysteriousCrystalGemExquisite.getIS());
+		CustomItemList.MysteriousCrystalLens.set(ItemList.MysteriousCrystalLens.getIS());
+		CustomItemList.MysteriousCrystalGemFlawless.set(ItemList.MysteriousCrystalGemFlawless.getIS());
+		CustomItemList.MysteriousCrystalGemExquisite.set(ItemList.MysteriousCrystalGemExquisite.getIS());
 		CustomItemList.PrimordialPearlFragment.set(ItemList.PrimordialPearlFragment.getIS());
 //		CustomItemList.SandStoneRod.set(ItemList.SandStoneRod.getIS());
 //		CustomItemList.TheBigEgg.set(ItemList.TheBigEgg.getIS());
@@ -568,8 +568,8 @@ public class GT_Loader_Items
 //		CustomItemList.DraconiumEgg.set(ItemList.DraconiumEgg.getIS());
 		CustomItemList.EnderEgg.set(ItemList.EnderEgg.getIS());
 		CustomItemList.ChargedCertusQuartzDust.set(ItemList.ChargedCertusQuartzDust.getIS());
-//		CustomItemList.RawPicoWafer.set(ItemList.RawPicoWafer.getIS());
-//		CustomItemList.PicoWafer.set(ItemList.PicoWafer.getIS());
+		CustomItemList.RawPicoWafer.set(ItemList.RawPicoWafer.getIS());
+		CustomItemList.PicoWafer.set(ItemList.PicoWafer.getIS());
 		CustomItemList.StargateFramePart.set(ItemList.StargateFramePart.getIS());
 		CustomItemList.StargateChevron.set(ItemList.StargateChevron.getIS());
 		CustomItemList.StargateShieldingFoil.set(ItemList.StargateShieldingFoil.getIS());
