@@ -1363,7 +1363,7 @@ public class GT_MachineRecipeLoader implements Runnable {
         */
         //recipes for everything that uses sand
         for (int i = 0; i < OreDictionary.getOres("sand").size(); ++i) {
-            GT_Values.RA.addPulveriserRecipe(OreDictionary.getOres("sand").get(i), new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L)}, new int[]{10000, 2500, 2000, 1500}, 200, 8);
+            GT_Values.RA.addPulveriserRecipe(OreDictionary.getOres("sand").get(i), new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L)}, new int[]{10000, 2500, 2000, 1500}, 200, 2);
             GT_Values.RA.addAlloySmelterRecipe(OreDictionary.getOres("sand").get(i), new ItemStack(Items.clay_ball), com.dreammaster.item.ItemList.CokeOvenBrick.getIS().splitStack(2), 120, 8);
         }
 
