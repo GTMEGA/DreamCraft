@@ -24,26 +24,6 @@ public class GT_Loader_OreDictionary extends gregtech.loaders.preload.GT_Loader_
         GT_OreDictUnificator.registerOre(OrePrefixes.log, Materials.Wood, GT_ModHandler.getModItem("BiomesOPlenty", "logs4", 1L, 3));
         GT_OreDictUnificator.registerOre("cropCarrot", GT_ModHandler.getModItem("BiomesOPlenty", "food", 1L, 2));
 
-        GT_OreDictUnificator.registerOre(OrePrefixes.ingot, Materials.Mytryl, ItemList.MytrylIngot.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.dust, Materials.Mytryl, ItemList.MytrylDust.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.plate, Materials.Mytryl, ItemList.MytrylPlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.compressed, Materials.Mytryl, ItemList.MytrylCompressedPlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.plateDense, Materials.Mytryl, ItemList.MytrylDensePlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.block, Materials.Mytryl, GT_ModHandler.getModItem("dreamcraft", "tile.Mytryl", 1L, 0));
-        GT_OreDictUnificator.registerOre(OrePrefixes.ingot, Materials.CallistoIce, ItemList.CallistoIceIngot.getIS());
-        GT_OreDictUnificator.registerOre("ingotColdCallistoIce", ItemList.CallistoIceColdIngot.getIS());
-        GT_OreDictUnificator.registerOre("blockCallistoIce", GT_ModHandler.getModItem("dreamcraft", "tile.CallistoColdIce", 1L, 0));
-        GT_OreDictUnificator.registerOre(OrePrefixes.dust, Materials.CallistoIce, ItemList.CallistoIceDust.getIS());
-        GT_OreDictUnificator.registerOre("plateColdCallistoIce", ItemList.CallistoIcePlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.plateDense, Materials.CallistoIce, ItemList.CallistoIceDensePlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.compressed, Materials.CallistoIce, ItemList.CallistoIceCompressedPlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.ingot, Materials.Ledox, ItemList.LedoxIngot.getIS());
-        GT_OreDictUnificator.registerOre("ingotColdLedox", ItemList.LedoxColdIngot.getIS());
-        GT_OreDictUnificator.registerOre("blockLedox", GT_ModHandler.getModItem("dreamcraft", "tile.Ledox", 1L, 0));
-        GT_OreDictUnificator.registerOre(OrePrefixes.dust, Materials.Ledox, ItemList.LedoxDust.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.plate, Materials.Ledox, ItemList.LedoxPlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.plateDense, Materials.Ledox, ItemList.LedoxDensePlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.compressed, Materials.Ledox, ItemList.LedoxCompressedPlate.getIS());
         GT_OreDictUnificator.registerOre(OrePrefixes.stick, Materials.Stone, ItemList.CobbleStoneRod.getIS());
         GT_OreDictUnificator.registerOre(OrePrefixes.plate, Materials.Stone, ItemList.StonePlate.getIS());
         GT_OreDictUnificator.registerOre(OrePrefixes.plate, Materials.Void, ItemList.VoidPlate.getIS());
@@ -53,18 +33,7 @@ public class GT_Loader_OreDictionary extends gregtech.loaders.preload.GT_Loader_
         GT_OreDictUnificator.registerOre("stickSandstone", ItemList.SandStoneRod.getIS());
         GT_OreDictUnificator.registerOre("lensReinforcedGlass", ItemList.ReinforcedGlassLense.getIS());
         GT_OreDictUnificator.registerOre("plateReinforcedGlass", ItemList.ReinforcedGlassPlate.getIS());
-        GT_OreDictUnificator.registerOre("blockQuantium", GT_ModHandler.getModItem("dreamcraft", "tile.Quantinum", 1L, 0));
-        GT_OreDictUnificator.registerOre(OrePrefixes.compressed, Materials.Quantium, ItemList.QuantinumCompressedPlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.dust, Materials.Quantium, ItemList.QuantinumDust.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.plateDense, Materials.Quantium, ItemList.QuantinumDensePlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.plate, Materials.Quantium, ItemList.QuantinumPlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.ingot, Materials.MysteriousCrystal, ItemList.MysteriousCrystalIngot.getIS());
-        GT_OreDictUnificator.registerOre("ingotColdMysteriousCrystal", ItemList.MysteriousCrystalColdIngot.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.block, Materials.MysteriousCrystal, GT_ModHandler.getModItem("dreamcraft", "tile.MysteriousCrystal", 1L, 0));
-        GT_OreDictUnificator.registerOre(OrePrefixes.dust, Materials.MysteriousCrystal, ItemList.MysteriousCrystalDust.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.plate, Materials.MysteriousCrystal, ItemList.MysteriousCrystalPlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.compressed, Materials.MysteriousCrystal, ItemList.MysteriousCrystalCompressedPlate.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.plateDense, Materials.MysteriousCrystal, ItemList.MysteriousCrystalDensePlate.getIS());
+//        GT_OreDictUnificator.registerOre("blockQuantium", GT_ModHandler.getModItem("dreamcraft", "tile.Quantinum", 1L, 0));
         //GT_OreDictUnificator.registerOre(OrePrefixes.lens, Materials.MysteriousCrystal, ItemList.MysteriousCrystalLens.getIS());
         //GT_OreDictUnificator.registerOre(OrePrefixes.gemFlawless, Materials.MysteriousCrystal, ItemList.MysteriousCrystalGemFlawless.getIS());
         //GT_OreDictUnificator.registerOre(OrePrefixes.gemExquisite, Materials.MysteriousCrystal, ItemList.MysteriousCrystalGemExquisite.getIS());
@@ -188,9 +157,9 @@ public class GT_Loader_OreDictionary extends gregtech.loaders.preload.GT_Loader_
         GT_OreDictUnificator.registerOre(OrePrefixes.log, Materials.Wood, GT_ModHandler.getModItem("IC2", "blockRubWood", 1L, 0));
 
         //GTNH-Circuits
-        GT_OreDictUnificator.registerOre(OrePrefixes.circuit,Materials.Piko,ItemList.PikoCircuit.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.circuit,Materials.Quantum,ItemList.QuantumCircuit.getIS());
-        GT_OreDictUnificator.registerOre(OrePrefixes.circuit,Materials.Nano,ItemList.NanoCircuit.getIS());
+//        GT_OreDictUnificator.registerOre(OrePrefixes.circuit,Materials.Piko,ItemList.PikoCircuit.getIS());
+//        GT_OreDictUnificator.registerOre(OrePrefixes.circuit,Materials.Quantum,ItemList.QuantumCircuit.getIS());
+//        GT_OreDictUnificator.registerOre(OrePrefixes.circuit,Materials.Nano,ItemList.NanoCircuit.getIS());
 
         // Add ore dictionary entries for sand and red sand to craft unfired coke oven bricks.
         GT_OreDictUnificator.registerOre("sand", new ItemStack(Blocks.sand, 1, 0));
