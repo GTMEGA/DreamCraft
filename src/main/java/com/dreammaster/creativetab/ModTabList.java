@@ -26,6 +26,7 @@ public final class ModTabList {
 	public static String ModSpaceTab = "tabDreamCraftSpace";
 	public static String ModSolarTab = "tabDreamCraftSolar";
 	public static String ModBarsAndCasingsTab = "tabDreamCraftBars_Casings";
+	public static String ModAdditionsToGregTechTab = "tabDreamGregTechAdditions";
 
     private ModTabList() {}
 
@@ -40,5 +41,24 @@ public final class ModTabList {
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModBlocksTab, Item.getItemFromBlock(Blocks.stone)));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModSolarTab, ItemList.EnrichedNaquadriaNeutroniumSunnariumAlloy.Item.getConstructedItem()));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModBarsAndCasingsTab, ItemList.ChromeBars.Item.getConstructedItem()));
+		pTabManager.AddCreativeTab(new ModCreativeTab(ModAdditionsToGregTechTab, ItemList.CokeOvenBrick.Item.getConstructedItem()){
+			@Override
+			public void displayAllReleventItems(List stuffToShow) {
+				//casing adder
+				for(int i = 0; i < 16; ++i) {
+					ItemStack aStack = new ItemStack(sBlockCasingsNH, 1, i);
+					if(!aStack.getDisplayName().contains(".name")) {
+						stuffToShow.add(aStack);
+					}
+				}
+				//te adder
+				for(CustomItemList item: CustomItemList.values()){
+					if (item.hasBeenSet() && item.getBlock() == GregTech_API.sBlockMachines) {
+						stuffToShow.add(item.get(1));
+					}
+				}
+				super.displayAllReleventItems(stuffToShow);
+			}
+		});
 	}
 }
