@@ -2,7 +2,7 @@
 {
   "modid": "${modId}",
   "name": "${modName}",
-  "description": "Core Mod for the GT: New Horizons Pack.",
+  "description": "Core Mod for the MEGA modpack.",
   "version": "${modVersion}",
   "mcversion": "${minecraftVersion}",
   "url": "",
