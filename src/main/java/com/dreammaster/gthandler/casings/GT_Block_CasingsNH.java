@@ -3,8 +3,6 @@ package com.dreammaster.gthandler.casings;
 import com.dreammaster.gthandler.CustomItemList;
 import gregtech.api.enums.Dyes;
 import gregtech.api.enums.Textures;
-import gregtech.api.interfaces.metatileentity.IMetaTileEntity;
-import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.objects.GT_CopiedBlockTexture;
 import gregtech.api.util.GT_LanguageManager;
 import gregtech.common.blocks.GT_Block_Casings_Abstract;
@@ -12,7 +10,6 @@ import gregtech.common.blocks.GT_Material_Casings;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import cpw.mods.fml.relauncher.Side;
@@ -32,7 +29,7 @@ public class GT_Block_CasingsNH extends GT_Block_Casings_Abstract {
         }
 //        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".0.name", "Air Filter Turbine Casing");//adding
 //        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".1.name", "Air Filter Vent Casing");//adding
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".2.name", "Pyrolyse Oven Casing");//adding
+        GT_LanguageManager.addStringLocalization(this.getUnlocalizedName() + ".2.name", "Pyrolyse Oven Casing");//adding
 
 //        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".10.name", "UEV Machine Casing");//adding
 //        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".11.name", "UIV Machine Casing");//adding

@@ -59,9 +59,7 @@ public final class GT_Loader_ItemPipes {
         GT_OreDictUnificator.registerOre(OrePrefixes.pipeRestrictiveHuge.get(Materials.Tin), new GT_MetaPipeEntity_Item(5598, "GT_Pipe_Restrictive_Tin_Huge", "Huge Restrictive " + displayName + " Item Pipe", 0.875F, Materials.Tin, 2, 1638400, true).getStackForm(1L));
 
         generateItemPipes(Materials.ElectrumFlux, Materials.ElectrumFlux.mName, 5650, 16);
-        generateItemPipes(Materials.BlackPlutonium, Materials.BlackPlutonium.mName, 5660, 32);
         generateItemPipes(Materials.Bedrockium, Materials.Bedrockium.mName, 5670, 64);
-        generateItemPipes(Materials.Quantium, Materials.Quantium.mName, 5730, 128);
     }
 
     private static void generateItemPipes(Materials aMaterial, String name, int startID, int baseInvSlots){

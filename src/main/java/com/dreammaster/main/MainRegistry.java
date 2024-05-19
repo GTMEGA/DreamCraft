@@ -308,10 +308,10 @@ public class MainRegistry
         
         // Register additional OreDictionary Names
         if(CoreConfig.OreDictItems_Enabled)
-        OreDictHandler.register_all();
+            OreDictHandler.register_all();
 
         if (Loader.isModLoaded("TwilightForest"))
-        TF_Loot_Chests.init();
+            TF_Loot_Chests.init();
     }
 
     public static Block _mBlockBabyChest = new BlockBabyChest();
