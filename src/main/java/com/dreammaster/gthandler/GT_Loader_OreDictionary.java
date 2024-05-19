@@ -33,7 +33,6 @@ public class GT_Loader_OreDictionary extends gregtech.loaders.preload.GT_Loader_
         GT_OreDictUnificator.registerOre("stickSandstone", ItemList.SandStoneRod.getIS());
         GT_OreDictUnificator.registerOre("lensReinforcedGlass", ItemList.ReinforcedGlassLense.getIS());
         GT_OreDictUnificator.registerOre("plateReinforcedGlass", ItemList.ReinforcedGlassPlate.getIS());
-//        GT_OreDictUnificator.registerOre("blockQuantium", GT_ModHandler.getModItem("dreamcraft", "tile.Quantinum", 1L, 0));
         //GT_OreDictUnificator.registerOre(OrePrefixes.lens, Materials.MysteriousCrystal, ItemList.MysteriousCrystalLens.getIS());
         //GT_OreDictUnificator.registerOre(OrePrefixes.gemFlawless, Materials.MysteriousCrystal, ItemList.MysteriousCrystalGemFlawless.getIS());
         //GT_OreDictUnificator.registerOre(OrePrefixes.gemExquisite, Materials.MysteriousCrystal, ItemList.MysteriousCrystalGemExquisite.getIS());
@@ -148,11 +147,6 @@ public class GT_Loader_OreDictionary extends gregtech.loaders.preload.GT_Loader_
         GT_OreDictUnificator.registerOre("dyeLime", GT_ModHandler.getModItem("gregtech", "gt.metaitem.01", 1L, 2877));
 
         GT_OreDictUnificator.registerOre(OrePrefixes.log, Materials.Wood, GT_ModHandler.getModItem("IC2", "blockRubWood", 1L, 0));
-
-        //GTNH-Circuits
-//        GT_OreDictUnificator.registerOre(OrePrefixes.circuit,Materials.Piko,ItemList.PikoCircuit.getIS());
-//        GT_OreDictUnificator.registerOre(OrePrefixes.circuit,Materials.Quantum,ItemList.QuantumCircuit.getIS());
-//        GT_OreDictUnificator.registerOre(OrePrefixes.circuit,Materials.Nano,ItemList.NanoCircuit.getIS());
 
         // Add ore dictionary entries for sand and red sand to craft unfired coke oven bricks.
         GT_OreDictUnificator.registerOre("sand", new ItemStack(Blocks.sand, 1, 0));
