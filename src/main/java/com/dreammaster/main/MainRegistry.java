@@ -27,8 +27,8 @@ import com.dreammaster.modfixes.oilgen.OilGeneratorFix;
 import com.dreammaster.modhazardousitems.HazardousItemsHandler;
 import com.dreammaster.network.CoreModDispatcher;
 import com.dreammaster.oredict.OreDictHandler;
-import com.dreammaster.railcraftStones.NH_GeodePopulator;
-import com.dreammaster.railcraftStones.NH_QuarryPopulator;
+//import com.dreammaster.railcraftStones.NH_GeodePopulator;
+//import com.dreammaster.railcraftStones.NH_QuarryPopulator;
 import com.dreammaster.witchery.WitcheryPlugin;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
@@ -275,8 +275,7 @@ public class MainRegistry
             FMLCommonHandler.instance().bus().register(new LoginHandler());
         }
         Logger.warn( "==================================================" );
-        Logger.warn( "Welcome to GT:MEGA " + CoreModConfig.ModPackVersion );
-        Logger.warn( "Please bring comments to " + "https://discord.gg/gtmega" );
+        Logger.warn( "This is: MEGA " + CoreModConfig.ModPackVersion );
         Logger.warn( "==================================================" );
 
         MinecraftForge.EVENT_BUS.register(new OvenGlove.EventHandler());
@@ -353,10 +352,10 @@ public class MainRegistry
             MinecraftForge.EVENT_BUS.register(Module_CustomDrops);
         }
 
-        if(Loader.isModLoaded("Railcraft")){
-            MinecraftForge.EVENT_BUS.register(NH_GeodePopulator.instance());//instead of RC
-            MinecraftForge.EVENT_BUS.register(NH_QuarryPopulator.instance());//instead of RC
-        }
+//        if(Loader.isModLoaded("Railcraft")){
+//            MinecraftForge.EVENT_BUS.register(NH_GeodePopulator.instance());//instead of RC
+//            MinecraftForge.EVENT_BUS.register(NH_QuarryPopulator.instance());//instead of RC
+//        }
     }
 
     @Mod.EventHandler
