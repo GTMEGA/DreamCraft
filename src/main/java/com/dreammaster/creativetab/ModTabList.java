@@ -30,36 +30,36 @@ public final class ModTabList {
 
     private ModTabList() {}
 
-    public static void InitModTabs(CreativeTabsManager pTabManager, ModItemManager pItemManager)
-	{
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModGenericTab, ItemList.AsteroidsStoneDust.Item.getConstructedItem()));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModShapesTab, ItemList.ShapeBlock.Item.getConstructedItem()));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModMoldsTab, ItemList.MoldFormAnvil.Item.getConstructedItem()));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModThaumcraftTab, ItemList.ChargedVoidWandCap.Item.getConstructedItem()));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModCircuitsTab, ItemList.QuantumCircuit.Item.getConstructedItem()));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModFluidsTab, Items.bucket));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModBlocksTab, Item.getItemFromBlock(Blocks.stone)));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModSpaceTab, ItemList.HeavyDutyNoseConeTier3.Item.getConstructedItem()));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModSolarTab, ItemList.EnrichedNaquadriaNeutroniumSunnariumAlloy.Item.getConstructedItem()));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModBarsAndCasingsTab, ItemList.ChromeBars.Item.getConstructedItem()));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModAdditionsToGregTechTab, ItemList.EtchedLudicrousVoltageWiring.Item.getConstructedItem()){
-			@Override
-			public void displayAllReleventItems(List stuffToShow) {
-				//casing adder
-				for(int i = 0; i < 16; ++i) {
-					ItemStack aStack = new ItemStack(sBlockCasingsNH, 1, i);
-					if(!aStack.getDisplayName().contains(".name")) {
-						stuffToShow.add(aStack);
-					}
-				}
-				//te adder
-				for(CustomItemList item: CustomItemList.values()){
-					if (item.hasBeenSet() && item.getBlock() == GregTech_API.sBlockMachines) {
-						stuffToShow.add(item.get(1));
-					}
-				}
-				super.displayAllReleventItems(stuffToShow);
-			}
-		});
-	}
+//    public static void InitModTabs(CreativeTabsManager pTabManager, ModItemManager pItemManager)
+//	{
+//		pTabManager.AddCreativeTab(new ModCreativeTab(ModGenericTab, ItemList.AsteroidsStoneDust.Item.getConstructedItem()));
+//		pTabManager.AddCreativeTab(new ModCreativeTab(ModShapesTab, ItemList.ShapeBlock.Item.getConstructedItem()));
+//		pTabManager.AddCreativeTab(new ModCreativeTab(ModMoldsTab, ItemList.MoldFormAnvil.Item.getConstructedItem()));
+//		pTabManager.AddCreativeTab(new ModCreativeTab(ModThaumcraftTab, ItemList.ChargedVoidWandCap.Item.getConstructedItem()));
+//		pTabManager.AddCreativeTab(new ModCreativeTab(ModCircuitsTab, ItemList.QuantumCircuit.Item.getConstructedItem()));
+//		pTabManager.AddCreativeTab(new ModCreativeTab(ModFluidsTab, Items.bucket));
+//		pTabManager.AddCreativeTab(new ModCreativeTab(ModBlocksTab, Item.getItemFromBlock(Blocks.stone)));
+//		pTabManager.AddCreativeTab(new ModCreativeTab(ModSpaceTab, ItemList.HeavyDutyNoseConeTier3.Item.getConstructedItem()));
+//		pTabManager.AddCreativeTab(new ModCreativeTab(ModSolarTab, ItemList.EnrichedNaquadriaNeutroniumSunnariumAlloy.Item.getConstructedItem()));
+//		pTabManager.AddCreativeTab(new ModCreativeTab(ModBarsAndCasingsTab, ItemList.ChromeBars.Item.getConstructedItem()));
+//		pTabManager.AddCreativeTab(new ModCreativeTab(ModAdditionsToGregTechTab, ItemList.EtchedLudicrousVoltageWiring.Item.getConstructedItem()){
+//			@Override
+//			public void displayAllReleventItems(List stuffToShow) {
+//				//casing adder
+//				for(int i = 0; i < 16; ++i) {
+//					ItemStack aStack = new ItemStack(sBlockCasingsNH, 1, i);
+//					if(!aStack.getDisplayName().contains(".name")) {
+//						stuffToShow.add(aStack);
+//					}
+//				}
+//				//te adder
+//				for(CustomItemList item: CustomItemList.values()){
+//					if (item.hasBeenSet() && item.getBlock() == GregTech_API.sBlockMachines) {
+//						stuffToShow.add(item.get(1));
+//					}
+//				}
+//				super.displayAllReleventItems(stuffToShow);
+//			}
+//		});
+//	}
 }

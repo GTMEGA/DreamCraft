@@ -168,9 +168,9 @@ public class MainRegistry
         // ------------------------------------------------------------
 
         // ------------------------------------------------------------
-        Logger.debug("PRELOAD Init Tabmanager");
-        TabManager = new CreativeTabsManager();
-        ModTabList.InitModTabs(TabManager, ItemManager);
+//        Logger.debug("PRELOAD Init Tabmanager");
+//        TabManager = new CreativeTabsManager();
+//        ModTabList.InitModTabs(TabManager, ItemManager);
         // ------------------------------------------------------------
 
         //Materials init
@@ -307,8 +307,8 @@ public class MainRegistry
         }
         
         // Register additional OreDictionary Names
-        if(CoreConfig.OreDictItems_Enabled)
-        OreDictHandler.register_all();
+//        if(CoreConfig.OreDictItems_Enabled)
+//        OreDictHandler.register_all();
 
         if (Loader.isModLoaded("TwilightForest"))
         TF_Loot_Chests.init();

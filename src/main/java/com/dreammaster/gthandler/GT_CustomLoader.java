@@ -33,7 +33,7 @@ public class GT_CustomLoader
         		Materials.Naquadah,
         		OrePrefixes.wireGt02.get(Materials.Naquadah),
         		OrePrefixes.gemExquisite.get(Materials.GarnetYellow),
-        		ItemList.MysteriousCrystal.getIS(),
+                gregtech.api.enums.ItemList.Gravistar,
                 Loader.isModLoaded("bartworks") ? "blockGlassZPM" : "glassReinforced",
         		Materials.Iridium,
         		Materials.Naquadah),
@@ -43,7 +43,7 @@ public class GT_CustomLoader
         		Materials.ElectrumFlux, 
         		OrePrefixes.wireGt02.get(Materials.NaquadahAlloy),
         		OrePrefixes.gemExquisite.get(Materials.GarnetRed),
-        		new ItemStack(Blocks.dragon_egg, 1),
+                gregtech.api.enums.ItemList.Gravistar,
                 Loader.isModLoaded("bartworks") ? "blockGlassUV" : "glassReinforced",
         		Materials.Osmium,
         		Materials.Neutronium),
@@ -174,7 +174,7 @@ public class GT_CustomLoader
     private static final GT_Loader_Batteries BatteryLoader = new GT_Loader_Batteries();
     private static final GT_MachineRecipeLoader MachineRecipeLoader = new GT_MachineRecipeLoader();
     private static final GT_CraftingRecipeLoader CraftingRecipeLoader = new GT_CraftingRecipeLoader();
-    private static final GT_Loader_OreDictionary OreDictionary = new GT_Loader_OreDictionary();
+//    private static final GT_Loader_OreDictionary OreDictionary = new GT_Loader_OreDictionary();
     private static final GT_Recipe_Remover Remover = new GT_Recipe_Remover();
 
     public void run()
@@ -191,6 +191,6 @@ public class GT_CustomLoader
     	Remover.run();
         MachineRecipeLoader.run();
         CraftingRecipeLoader.run();
-        OreDictionary.run();
+//        OreDictionary.run();
     }
 }
