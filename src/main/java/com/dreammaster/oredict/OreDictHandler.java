@@ -11,7 +11,7 @@ import static net.minecraftforge.oredict.OreDictionary.WILDCARD_VALUE;
 
 public class OreDictHandler {
 	public static void reg_additional() {
-		OreDictionary.registerOre("foodSalt", ItemList.EdibleSalt.getIS());
+//		OreDictionary.registerOre("foodSalt", ItemList.EdibleSalt.getIS());
 
 		//Olivine = Peridot
 		for (int i = 0; i < OreDictionary.getOres("blockOlivine").size(); i++) {

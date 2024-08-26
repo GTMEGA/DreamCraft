@@ -33,14 +33,11 @@ public final class ModTabList {
     public static void InitModTabs(CreativeTabsManager pTabManager, ModItemManager pItemManager)
 	{
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModGenericTab, ItemList.SandDust.Item.getConstructedItem()));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModShapesTab, ItemList.ShapeBlock.Item.getConstructedItem()));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModMoldsTab, ItemList.MoldFormAnvil.Item.getConstructedItem()));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModThaumcraftTab, ItemList.ChargedVoidWandCap.Item.getConstructedItem()));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModCircuitsTab, ItemList.RawLapotronCrystal.Item.getConstructedItem()));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModFluidsTab, Items.bucket));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModBlocksTab, Item.getItemFromBlock(Blocks.stone)));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModSolarTab, ItemList.EnrichedNaquadriaNeutroniumSunnariumAlloy.Item.getConstructedItem()));
-		pTabManager.AddCreativeTab(new ModCreativeTab(ModBarsAndCasingsTab, ItemList.ChromeBars.Item.getConstructedItem()));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModAdditionsToGregTechTab, ItemList.CokeOvenBrick.Item.getConstructedItem()){
 			@Override
 			public void displayAllReleventItems(List stuffToShow) {
