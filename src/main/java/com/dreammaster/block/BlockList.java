@@ -11,11 +11,6 @@ import net.minecraft.block.*;
 public enum BlockList {
 
 	SandClayMix(new ModSimpleBaseBlock(new SandClayProperties(), ModTabList.ModBlocksTab)),
-	CallistoColdIce(new ModSimpleBaseBlock(new CallistoColdIceProperties(), ModTabList.ModBlocksTab)),
-	Ledox(new ModSimpleBaseBlock(new LedoxProperties(), ModTabList.ModBlocksTab)),
-	MysteriousCrystal(new ModSimpleBaseBlock(new MysteriousCrystalProperties(), ModTabList.ModBlocksTab)),
-	Mytryl(new ModSimpleBaseBlock(new MytrylProperties(), ModTabList.ModBlocksTab)),
-	Quantinum(new ModSimpleBaseBlock(new QuantinumProperties(), ModTabList.ModBlocksTab)),
 	PistonBlock(new ModSimpleBaseBlock(new PistonBlockProperties(), ModTabList.ModBlocksTab)),
 	BronzePlatedReinforcedStone(new ModSimpleBaseBlock(new BronzePlatedReinforcedStoneProperties(), ModTabList.ModBlocksTab)),
 	SteelPlatedReinforcedStone(new ModSimpleBaseBlock(new SteelPlatedReinforcedStoneProperties(), ModTabList.ModBlocksTab)),
@@ -23,7 +18,6 @@ public enum BlockList {
 	TungstensteelPlatedReinforcedStone(new ModSimpleBaseBlock(new TungstensteelPlatedReinforcedStoneProperties(), ModTabList.ModBlocksTab)),
 	NaquadahPlatedReinforcedStone(new ModSimpleBaseBlock(new NaquadahPlatedReinforcedStoneProperties(), ModTabList.ModBlocksTab)),
 	NeutroniumPlatedReinforcedStone(new ModSimpleBaseBlock(new NeutroniumPlatedReinforcedStoneProperties(), ModTabList.ModBlocksTab)),
-	BlackPlutonium(new ModSimpleBaseBlock(new BlackPlutoniumProperties(), ModTabList.ModBlocksTab)),
 	Charcoal(new ModSimpleBaseBlock(new CharcoalProperties(), ModTabList.ModBlocksTab)),
 	CompressedCharcoal(new ModSimpleBaseBlock(new CompressedCharcoalProperties(), ModTabList.ModBlocksTab)),
 	CompressedCoal(new ModSimpleBaseBlock(new CompressedCoalProperties(), ModTabList.ModBlocksTab)),

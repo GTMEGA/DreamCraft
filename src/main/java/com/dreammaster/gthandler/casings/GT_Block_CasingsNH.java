@@ -6,17 +6,16 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import gregtech.api.enums.Dyes;
 import gregtech.api.enums.Textures;
-import gregtech.api.interfaces.metatileentity.IMetaTileEntity;
-import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.objects.GT_CopiedBlockTexture;
 import gregtech.api.util.GT_LanguageManager;
 import gregtech.common.blocks.GT_Block_Casings_Abstract;
 import gregtech.common.blocks.GT_Material_Casings;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 /**
  * Created by danie_000 on 03.10.2016.
@@ -30,27 +29,27 @@ public class GT_Block_CasingsNH extends GT_Block_Casings_Abstract {
             Textures.BlockIcons.casingTexturePages[8][b+64] = new GT_CopiedBlockTexture(this, 6, b);
             /*IMPORTANT for block recoloring*/
         }
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".0.name", "Air Filter Turbine Casing");//adding
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".1.name", "Air Filter Vent Casing");//adding
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".2.name", "Pyrolyse Oven Casing");//adding
+//        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".0.name", "Air Filter Turbine Casing");//adding
+//        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".1.name", "Air Filter Vent Casing");//adding
+        GT_LanguageManager.addStringLocalization(this.getUnlocalizedName() + ".2.name", "Pyrolyse Oven Casing");//adding
 
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".10.name", "UEV Machine Casing");//adding
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".11.name", "UIV Machine Casing");//adding
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".12.name", "UMV Machine Casing");//adding
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".13.name", "UXV Machine Casing");//adding
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".14.name", "OPV Machine Casing");//adding
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".15.name", "MAX Machine Casing");//adding
+//        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".10.name", "UEV Machine Casing");//adding
+//        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".11.name", "UIV Machine Casing");//adding
+//        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".12.name", "UMV Machine Casing");//adding
+//        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".13.name", "UXV Machine Casing");//adding
+//        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".14.name", "OPV Machine Casing");//adding
+//        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".15.name", "MAX Machine Casing");//adding
 
-        CustomItemList.Casing_AirFilter_Turbine.set(new ItemStack(this, 1, 0));//adding
-        CustomItemList.Casing_AirFilter_Vent.set(new ItemStack(this, 1, 1));//adding
+//        CustomItemList.Casing_AirFilter_Turbine.set(new ItemStack(this, 1, 0));//adding
+//        CustomItemList.Casing_AirFilter_Vent.set(new ItemStack(this, 1, 1));//adding
         CustomItemList.Casing_Pyrolyse.set(new ItemStack(this, 1, 2));//adding
 
-        CustomItemList.Casing_UEV.set(new ItemStack(this,1,10));
-        CustomItemList.Casing_UIV.set(new ItemStack(this,1,11));
-        CustomItemList.Casing_UMV.set(new ItemStack(this,1,12));
-        CustomItemList.Casing_UXV.set(new ItemStack(this,1,13));
-        CustomItemList.Casing_OPV.set(new ItemStack(this,1,14));
-        CustomItemList.Casing_MAXV.set(new ItemStack(this,1,15));
+//        CustomItemList.Casing_UEV.set(new ItemStack(this,1,10));
+//        CustomItemList.Casing_UIV.set(new ItemStack(this,1,11));
+//        CustomItemList.Casing_UMV.set(new ItemStack(this,1,12));
+//        CustomItemList.Casing_UXV.set(new ItemStack(this,1,13));
+//        CustomItemList.Casing_OPV.set(new ItemStack(this,1,14));
+//        CustomItemList.Casing_MAXV.set(new ItemStack(this,1,15));
     }
 
     @Override
@@ -61,10 +60,10 @@ public class GT_Block_CasingsNH extends GT_Block_Casings_Abstract {
     @Override
     public IIcon getIcon(int aSide, int aMeta) {
         switch (aMeta) {
-            case 0:
-                return Textures.BlockIcons.MACHINE_CASING_TURBINE.getIcon();
-            case 1:
-                return Textures.BlockIcons.MACHINE_CASING_PIPE_STEEL.getIcon();
+//            case 0:
+//                return Textures.BlockIcons.MACHINE_CASING_TURBINE.getIcon();
+//            case 1:
+//                return Textures.BlockIcons.MACHINE_CASING_PIPE_STEEL.getIcon();
             case 2:
                 return Textures.BlockIcons.MACHINE_8V_SIDE.getIcon();
             default:

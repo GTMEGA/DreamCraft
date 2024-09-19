@@ -34,14 +34,15 @@ dependencies {
         transitive = false
     }
 
-    implementation ("codechicken:codechickencore-mc1.7.10:1.0.9-gtmega:dev")
-    implementation ("codechicken:codechickenlib-mc1.7.10:1.1.4-gtmega:dev")
-    implementation ("codechicken:notenoughitems-mc1.7.10:2.1.5-gtmega:dev")
-
-    implementation (deobf("https://mvn.falsepattern.com/gtmega_releases/gtmega/bartworks-mc1.7.10/0.6.0-gtmega/bartworks-mc1.7.10-0.6.0-gtmega.jar"))
+    implementation("codechicken:codechickencore-mc1.7.10:1.4.0-mega:dev")
+    implementation("codechicken:notenoughitems-mc1.7.10:2.3.1-mega:dev") {
+        transitive = false;
+    }
 
     implementation ("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
-    api ("gtmega:gt5u-mc1.7.10:5.30.1:dev")
+    implementation("gtmega:gt5u-mc1.7.10:5.40.0-a0004:dev") {
+        transitive = false
+    }
 
     implementation ("gtmega:ae2-mc1.7.10:rv3-beta.58-gtmega:dev")
 
