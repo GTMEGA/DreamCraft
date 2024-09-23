@@ -2,12 +2,9 @@ package com.dreammaster.main;
 
 import com.dreammaster.Tags;
 import com.dreammaster.TwilightForest.TF_Loot_Chests;
-import com.dreammaster.baubles.OvenGlove;
-import com.dreammaster.baubles.WitherProtectionRing;
 import com.dreammaster.block.BlockList;
 import com.dreammaster.command.*;
 import com.dreammaster.config.CoreModConfig;
-import com.dreammaster.creativetab.ModTabList;
 import com.dreammaster.fluids.FluidList;
 import com.dreammaster.gthandler.*;
 import com.dreammaster.item.ItemList;
@@ -26,7 +23,6 @@ import com.dreammaster.modfixes.minetweaker.MinetweakerFurnaceFix;
 import com.dreammaster.modfixes.oilgen.OilGeneratorFix;
 import com.dreammaster.modhazardousitems.HazardousItemsHandler;
 import com.dreammaster.network.CoreModDispatcher;
-import com.dreammaster.oredict.OreDictHandler;
 //import com.dreammaster.railcraftStones.NH_GeodePopulator;
 //import com.dreammaster.railcraftStones.NH_QuarryPopulator;
 import com.dreammaster.witchery.WitcheryPlugin;
@@ -51,9 +47,8 @@ import eu.usrv.yamcore.fluids.ModFluidManager;
 import eu.usrv.yamcore.items.ModItemManager;
 import gregtech.GT_Mod;
 import gregtech.api.GregTech_API;
-import gregtech.api.enums.Materials;
 import gregtech.api.util.GT_LanguageManager;
-import gregtech.common.items.GT_MetaGenerated_Item_01;
+
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
@@ -74,8 +69,7 @@ import static gregtech.api.enums.Dyes.MACHINE_METAL;
             "required-before:gregtech;"
 
         +	"required-after:Forge@[10.13.2.1291,);"
-        +	"required-after:YAMCore@[0.5.76,);" 
-        +	"required-after:Baubles@[1.0.1.10,);"
+        +	"required-after:YAMCore@[0.5.76,);"
 
 		+   "after:EnderIO;"
         +   "after:HardcoreEnderExpansion;"
@@ -277,8 +271,6 @@ public class MainRegistry
         Logger.warn( "==================================================" );
         Logger.warn( "This is: MEGA " + CoreModConfig.ModPackVersion );
         Logger.warn( "==================================================" );
-
-        MinecraftForge.EVENT_BUS.register(new OvenGlove.EventHandler());
     }
 
     private static boolean RegisterNonEnumItems()

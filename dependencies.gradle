@@ -29,7 +29,6 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok:1.18.24")
 
     compile("com.github.GTNewHorizons:Yamcl:0.5.84:dev")
-    compile("com.azanor.baubles:Baubles:1.7.10-1.0.1.10:deobf")
     compileOnly("com.github.GTNewHorizons:AppleCore:3.2.0:dev") {
         transitive = false
     }
