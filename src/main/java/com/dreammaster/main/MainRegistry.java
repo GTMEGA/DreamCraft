@@ -1,5 +1,6 @@
 package com.dreammaster.main;
 
+import com.dreammaster.Const;
 import com.dreammaster.Tags;
 import com.dreammaster.TwilightForest.TF_Loot_Chests;
 import com.dreammaster.block.BlockList;
@@ -25,7 +26,7 @@ import com.dreammaster.modhazardousitems.HazardousItemsHandler;
 import com.dreammaster.network.CoreModDispatcher;
 //import com.dreammaster.railcraftStones.NH_GeodePopulator;
 //import com.dreammaster.railcraftStones.NH_QuarryPopulator;
-import com.dreammaster.witchery.WitcheryPlugin;
+//import com.dreammaster.witchery.WitcheryPlugin;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
@@ -61,9 +62,9 @@ import java.util.Random;
 import static gregtech.api.enums.Dyes.MACHINE_METAL;
 
 @Mod(
-        modid = Tags.MODID,
-        name = Tags.MODNAME,
-        version = Tags.VERSION,
+        modid = Tags.MOD_ID,
+        name = Tags.MOD_NAME,
+        version = Tags.MOD_VERSION,
         dependencies =
 
             "required-before:gregtech;"
@@ -78,10 +79,10 @@ import static gregtech.api.enums.Dyes.MACHINE_METAL;
 public class MainRegistry
 {
 
-    @SidedProxy(clientSide = Tags.GROUPNAME + ".main.ClientProxy", serverSide = Tags.GROUPNAME + ".main.CommonProxy")
+    @SidedProxy(clientSide = Tags.ROOT_PKG + ".main.ClientProxy", serverSide = Tags.ROOT_PKG + ".main.CommonProxy")
     public static CommonProxy proxy;
 
-    @Mod.Instance(Tags.MODID)
+    @Mod.Instance(Tags.MOD_ID)
     public static MainRegistry instance;
 
     public static ModItemManager ItemManager;
@@ -97,7 +98,7 @@ public class MainRegistry
     public static CoreModConfig CoreConfig;
     public static CoreModDispatcher NW;
     public static Random Rnd;
-    public static LogHelper Logger = new LogHelper(Tags.MODID);
+    public static LogHelper Logger = new LogHelper(Tags.MOD_ID);
 
     public static void AddLoginError(String pMessage)
     {
@@ -115,9 +116,9 @@ public class MainRegistry
 
         // ------------------------------------------------------------
         // Init coremod config file. Create it if it's not there
-        CoreConfig = new CoreModConfig(PreEvent.getModConfigurationDirectory(), Tags.COLLECTIONID, Tags.MODID);
+        CoreConfig = new CoreModConfig(PreEvent.getModConfigurationDirectory(), Const.COLLECTIONID, Tags.MOD_ID);
         if (!CoreConfig.LoadConfig()) {
-            Logger.error(String.format("%s could not load its config file. Things are going to be weird!", Tags.MODID));
+            Logger.error(String.format("%s could not load its config file. Things are going to be weird!", Tags.MOD_ID));
         }
         // ------------------------------------------------------------
 
@@ -157,8 +158,8 @@ public class MainRegistry
 
         // ------------------------------------------------------------
         Logger.debug("PRELOAD Init itemmanager");
-        ItemManager = new ModItemManager(Tags.MODID);
-        BlockManager = new ModBlockManager(Tags.MODID);
+        ItemManager = new ModItemManager(Tags.MOD_ID);
+        BlockManager = new ModBlockManager(Tags.MOD_ID);
         // ------------------------------------------------------------
 
         // ------------------------------------------------------------
@@ -225,7 +226,7 @@ public class MainRegistry
 
         // ------------------------------------------------------------
         Logger.debug("PRELOAD Create Fluids");
-        FluidManager = new ModFluidManager(Tags.MODID);
+        FluidManager = new ModFluidManager(Tags.MOD_ID);
         if (!FluidList.AddToItemManager(FluidManager))
         {
             Logger.warn("Some fluids failed to register. Check the logfile for details");
@@ -261,8 +262,8 @@ public class MainRegistry
             new GregTechPlusPlusAbandonedAspectsFix();
         }
 
-        if (Loader.isModLoaded("witchery"))
-        	new WitcheryPlugin();
+//        if (Loader.isModLoaded("witchery"))
+//        	new WitcheryPlugin();
 
         if (CoreModConfig.ModLoginMessage_Enabled)
         {

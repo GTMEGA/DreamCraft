@@ -39,7 +39,7 @@ public abstract class CTMGenericBlock extends Block
 	public void registerBlockIcons(IIconRegister iconRegister)
 	{
 		for (int i = 0; i < 47; i++) {
-            textures[i] = iconRegister.registerIcon(String.format("%s:sets/atlantis/%s/forgeCtm_%d", Tags.MODID.toLowerCase(), _mInternalName.toLowerCase(), i + 1));
+            textures[i] = iconRegister.registerIcon(String.format("%s:sets/atlantis/%s/forgeCtm_%d", Tags.MOD_ID.toLowerCase(), _mInternalName.toLowerCase(), i + 1));
         }
 	}
 	

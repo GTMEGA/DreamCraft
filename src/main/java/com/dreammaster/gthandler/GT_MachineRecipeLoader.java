@@ -95,7 +95,7 @@ public class GT_MachineRecipeLoader implements Runnable {
         GT_Values.RA.addAssemblerRecipe(CustomItemList.CarminiteFragment.get(6L), GT_Utility.getIntegratedCircuit(6), Materials.Thaumium.getMolten(216L), GT_ModHandler.getModItem("TwilightForest", "item.carminite", 1L, 0), 350, 1920);
         GT_Values.RA.addAssemblerRecipe(CustomItemList.SnowQueenBloodDrop.get(24L), GT_Utility.getIntegratedCircuit(24), Materials.Thaumium.getMolten(216L), CustomItemList.SnowQueenBlood.get(1L), 400, 4096);
         GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getModItem("Thaumcraft", "ItemResource", 10L, 14), GT_ModHandler.getModItem("TwilightForest", "item.trophy", 0L, 4), CustomItemList.SnowQueenBlood.get(1L), 1800, 7680);
-        GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getModItem("Thaumcraft", "ItemResource", 16L, 14), GT_ModHandler.getModItem("witchery", "ingredient", 1L, 130), GT_OreDictUnificator.get(OrePrefixes.gem, Materials.NetherStar, 1), 900, 256);
+//        GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getModItem("Thaumcraft", "ItemResource", 16L, 14), GT_ModHandler.getModItem("witchery", "ingredient", 1L, 130), GT_OreDictUnificator.get(OrePrefixes.gem, Materials.NetherStar, 1), 900, 256);
         GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.Wood, 1L), GT_OreDictUnificator.get(OrePrefixes.slab, Materials.Wood, 3L), Materials.Iron.getMolten(32L), CustomItemList.WoodenCasing.get(1L), 100, 8);
 
 //        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{CustomItemList.EngineCore.get(1L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.StainlessSteel, 4L),  GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Basic, 1L), GT_Utility.getIntegratedCircuit(10)},  GT_Values.NF, GT_ModHandler.getModItem(MOD_ID_FR, "engine", 1L, 0), 200, 16);
@@ -954,10 +954,10 @@ public class GT_MachineRecipeLoader implements Runnable {
         if (Loader.isModLoaded("ExtraTrees"))
             GT_Values.RA.addMixerRecipe(GT_ModHandler.getModItem("ExtraTrees", "misc", 4L, 2), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(1), Materials.Water.getFluid(500L), GT_Values.NF, ItemList.FR_Mulch.get(1L), 600, 2);
 
-        if (Loader.isModLoaded("witchery") && (Loader.isModLoaded("Genetics"))) {
-            GT_Values.RA.addMixerRecipe(new ItemStack(Items.sugar, 1, 0), new ItemStack(Items.bone, 1, 0), ItemList.FR_Mulch.get(1L), GT_ModHandler.getModItem("witchery", "ingredient", 1L, 18), GT_Values.NI, GT_Utility.getIntegratedCircuit(2), Materials.Water.getFluid(1000L), GT_Values.NF, GT_ModHandler.getModItem("Genetics", "misc", 1L, 4), 400, 16);
-            GT_Values.RA.addMixerRecipe(new ItemStack(Items.sugar, 1, 0), new ItemStack(Items.bone, 1, 0), ItemList.FR_Mulch.get(1L), GT_ModHandler.getModItem("witchery", "ingredient", 1L, 18), GT_Values.NI, GT_Utility.getIntegratedCircuit(3), GT_ModHandler.getDistilledWater(800L), GT_Values.NF, GT_ModHandler.getModItem("Genetics", "misc", 1L, 4), 400, 16);
-        }
+//        if (Loader.isModLoaded("witchery") && (Loader.isModLoaded("Genetics"))) {
+//            GT_Values.RA.addMixerRecipe(new ItemStack(Items.sugar, 1, 0), new ItemStack(Items.bone, 1, 0), ItemList.FR_Mulch.get(1L), GT_ModHandler.getModItem("witchery", "ingredient", 1L, 18), GT_Values.NI, GT_Utility.getIntegratedCircuit(2), Materials.Water.getFluid(1000L), GT_Values.NF, GT_ModHandler.getModItem("Genetics", "misc", 1L, 4), 400, 16);
+//            GT_Values.RA.addMixerRecipe(new ItemStack(Items.sugar, 1, 0), new ItemStack(Items.bone, 1, 0), ItemList.FR_Mulch.get(1L), GT_ModHandler.getModItem("witchery", "ingredient", 1L, 18), GT_Values.NI, GT_Utility.getIntegratedCircuit(3), GT_ModHandler.getDistilledWater(800L), GT_Values.NF, GT_ModHandler.getModItem("Genetics", "misc", 1L, 4), 400, 16);
+//        }
 
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dustSmall, Materials.Clay, 8L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_ModHandler.getWater(1000L), GT_Values.NF, new ItemStack(Items.clay_ball, 4, 0), 100, 8);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Copper, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Redstone, 4L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.RedAlloy, 1L), 100, 16);

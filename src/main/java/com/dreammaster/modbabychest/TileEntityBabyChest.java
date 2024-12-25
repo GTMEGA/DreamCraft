@@ -179,7 +179,7 @@ public class TileEntityBabyChest extends TileEntity implements IInventory, ISide
     @Override
     public String getInventoryName() 
     {
-        return String.format("%s.%s", Tags.MODID, "babychest");
+        return String.format("%s.%s", Tags.MOD_ID, "babychest");
     }
 
     @Override

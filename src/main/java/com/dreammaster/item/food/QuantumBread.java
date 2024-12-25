@@ -23,7 +23,7 @@ public final class QuantumBread extends ItemFood
     private QuantumBread()
     {
         super(1, 0.0F, true);
-        super.setTextureName(String.format("%s:item%s", Tags.MODID, QUANTUM_BREAD_NAME));
+        super.setTextureName(String.format("%s:item%s", Tags.MOD_ID, QUANTUM_BREAD_NAME));
         setUnlocalizedName(QUANTUM_BREAD_NAME);
         setAlwaysEdible();
     }

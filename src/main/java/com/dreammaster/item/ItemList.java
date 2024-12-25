@@ -573,7 +573,7 @@ public enum ItemList
     {
         Item = pItem;
         if (Item != null) {
-            Item.setModIDName(Tags.MODID);
+            Item.setModIDName(Tags.MOD_ID);
         }
     }
 

@@ -1,8 +1,8 @@
 package com.dreammaster.modctt;
 
 
+import com.dreammaster.Const;
 import com.dreammaster.main.MainRegistry;
-import com.dreammaster.Tags;
 import com.dreammaster.network.msg.CTTClientSyncMessage;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
@@ -45,7 +45,7 @@ public class CustomToolTipsHandler
 
   public CustomToolTipsHandler()
   {
-    _mConfigFileName = String.format( "config/%s/CustomToolTips.xml", Tags.COLLECTIONID );
+    _mConfigFileName = String.format( "config/%s/CustomToolTips.xml", Const.COLLECTIONID );
     _mInitialized = false;
   }
 
