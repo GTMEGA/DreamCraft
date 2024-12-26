@@ -1,20 +1,15 @@
 package com.dreammaster.main;
 
+import com.dreammaster.Const;
 import com.dreammaster.Tags;
 import com.dreammaster.TwilightForest.TF_Loot_Chests;
-import com.dreammaster.baubles.OvenGlove;
-import com.dreammaster.baubles.WitherProtectionRing;
 import com.dreammaster.block.BlockList;
 import com.dreammaster.command.*;
 import com.dreammaster.config.CoreModConfig;
-import com.dreammaster.creativetab.ModTabList;
 import com.dreammaster.fluids.FluidList;
 import com.dreammaster.gthandler.*;
 import com.dreammaster.item.ItemList;
 import com.dreammaster.loginhandler.LoginHandler;
-import com.dreammaster.modbabychest.BlockBabyChest;
-import com.dreammaster.modbabychest.ItemBlockBabyChest;
-import com.dreammaster.modbabychest.TileEntityBabyChest;
 import com.dreammaster.modctt.CustomToolTipsHandler;
 import com.dreammaster.modcustomdrops.CustomDropsHandler;
 import com.dreammaster.modcustomfuels.CustomFuelsHandler;
@@ -26,10 +21,9 @@ import com.dreammaster.modfixes.minetweaker.MinetweakerFurnaceFix;
 import com.dreammaster.modfixes.oilgen.OilGeneratorFix;
 import com.dreammaster.modhazardousitems.HazardousItemsHandler;
 import com.dreammaster.network.CoreModDispatcher;
-import com.dreammaster.oredict.OreDictHandler;
 //import com.dreammaster.railcraftStones.NH_GeodePopulator;
 //import com.dreammaster.railcraftStones.NH_QuarryPopulator;
-import com.dreammaster.witchery.WitcheryPlugin;
+//import com.dreammaster.witchery.WitcheryPlugin;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
@@ -51,9 +45,8 @@ import eu.usrv.yamcore.fluids.ModFluidManager;
 import eu.usrv.yamcore.items.ModItemManager;
 import gregtech.GT_Mod;
 import gregtech.api.GregTech_API;
-import gregtech.api.enums.Materials;
 import gregtech.api.util.GT_LanguageManager;
-import gregtech.common.items.GT_MetaGenerated_Item_01;
+
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
@@ -66,16 +59,15 @@ import java.util.Random;
 import static gregtech.api.enums.Dyes.MACHINE_METAL;
 
 @Mod(
-        modid = Tags.MODID,
-        name = Tags.MODNAME,
-        version = Tags.VERSION,
+        modid = Tags.MOD_ID,
+        name = Tags.MOD_NAME,
+        version = Tags.MOD_VERSION,
         dependencies =
 
             "required-before:gregtech;"
 
         +	"required-after:Forge@[10.13.2.1291,);"
-        +	"required-after:YAMCore@[0.5.76,);" 
-        +	"required-after:Baubles@[1.0.1.10,);"
+        +	"required-after:YAMCore@[0.5.76,);"
 
 		+   "after:EnderIO;"
         +   "after:HardcoreEnderExpansion;"
@@ -84,10 +76,10 @@ import static gregtech.api.enums.Dyes.MACHINE_METAL;
 public class MainRegistry
 {
 
-    @SidedProxy(clientSide = Tags.GROUPNAME + ".main.ClientProxy", serverSide = Tags.GROUPNAME + ".main.CommonProxy")
+    @SidedProxy(clientSide = Tags.ROOT_PKG + ".main.ClientProxy", serverSide = Tags.ROOT_PKG + ".main.CommonProxy")
     public static CommonProxy proxy;
 
-    @Mod.Instance(Tags.MODID)
+    @Mod.Instance(Tags.MOD_ID)
     public static MainRegistry instance;
 
     public static ModItemManager ItemManager;
@@ -103,7 +95,7 @@ public class MainRegistry
     public static CoreModConfig CoreConfig;
     public static CoreModDispatcher NW;
     public static Random Rnd;
-    public static LogHelper Logger = new LogHelper(Tags.MODID);
+    public static LogHelper Logger = new LogHelper(Tags.MOD_ID);
 
     public static void AddLoginError(String pMessage)
     {
@@ -121,9 +113,9 @@ public class MainRegistry
 
         // ------------------------------------------------------------
         // Init coremod config file. Create it if it's not there
-        CoreConfig = new CoreModConfig(PreEvent.getModConfigurationDirectory(), Tags.COLLECTIONID, Tags.MODID);
+        CoreConfig = new CoreModConfig(PreEvent.getModConfigurationDirectory(), Const.COLLECTIONID, Tags.MOD_ID);
         if (!CoreConfig.LoadConfig()) {
-            Logger.error(String.format("%s could not load its config file. Things are going to be weird!", Tags.MODID));
+            Logger.error(String.format("%s could not load its config file. Things are going to be weird!", Tags.MOD_ID));
         }
         // ------------------------------------------------------------
 
@@ -163,8 +155,8 @@ public class MainRegistry
 
         // ------------------------------------------------------------
         Logger.debug("PRELOAD Init itemmanager");
-        ItemManager = new ModItemManager(Tags.MODID);
-        BlockManager = new ModBlockManager(Tags.MODID);
+        ItemManager = new ModItemManager(Tags.MOD_ID);
+        BlockManager = new ModBlockManager(Tags.MOD_ID);
         // ------------------------------------------------------------
 
         // ------------------------------------------------------------
@@ -231,7 +223,7 @@ public class MainRegistry
 
         // ------------------------------------------------------------
         Logger.debug("PRELOAD Create Fluids");
-        FluidManager = new ModFluidManager(Tags.MODID);
+        FluidManager = new ModFluidManager(Tags.MOD_ID);
         if (!FluidList.AddToItemManager(FluidManager))
         {
             Logger.warn("Some fluids failed to register. Check the logfile for details");
@@ -267,8 +259,8 @@ public class MainRegistry
             new GregTechPlusPlusAbandonedAspectsFix();
         }
 
-        if (Loader.isModLoaded("witchery"))
-        	new WitcheryPlugin();
+//        if (Loader.isModLoaded("witchery"))
+//        	new WitcheryPlugin();
 
         if (CoreModConfig.ModLoginMessage_Enabled)
         {
@@ -277,8 +269,6 @@ public class MainRegistry
         Logger.warn( "==================================================" );
         Logger.warn( "This is: MEGA " + CoreModConfig.ModPackVersion );
         Logger.warn( "==================================================" );
-
-        MinecraftForge.EVENT_BUS.register(new OvenGlove.EventHandler());
     }
 
     private static boolean RegisterNonEnumItems()
@@ -302,10 +292,8 @@ public class MainRegistry
         // register events in modules
         RegisterModuleEvents();
 
-        if (CoreConfig.ModBabyChest_Enabled) {
-            InitAdditionalBlocks();
-        }
-        
+        InitAdditionalBlocks();
+
         // Register additional OreDictionary Names
 //        if(CoreConfig.OreDictItems_Enabled)
 //        OreDictHandler.register_all();
@@ -314,17 +302,8 @@ public class MainRegistry
         TF_Loot_Chests.init();
     }
 
-    public static Block _mBlockBabyChest = new BlockBabyChest();
-
     private void InitAdditionalBlocks()
     {
-        GameRegistry.registerBlock(_mBlockBabyChest, ItemBlockBabyChest.class, "BabyChest");
-        GameRegistry.addShapelessRecipe(new ItemStack(_mBlockBabyChest, 9), new ItemStack(Blocks.chest, 1, 0));
-        GameRegistry.registerTileEntity(TileEntityBabyChest.class, "teBabyChest");
-
-        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
-
-        proxy.registerRenderInfo();
         GT_Loader_CasingNH.load();
     }
 

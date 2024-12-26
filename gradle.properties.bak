@@ -207,7 +207,7 @@ remapStubs = false
 
 # Optional parameter to customize the produced artifacts. Use this to preserver artifact naming when migrating older
 # projects. New projects should not use this parameter.
-customArchiveBaseName = GTNewHorizonsCoreMod
+customArchiveBaseName = CoreMod
 
 #endregion misc
 

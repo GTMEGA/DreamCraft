@@ -9,7 +9,7 @@ public class CoreModDispatcher extends PacketDispatcher
 
     public CoreModDispatcher()
     {
-        super(Tags.MODID);
+        super(Tags.MOD_ID);
     }
 
     @Override

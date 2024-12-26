@@ -77,7 +77,7 @@ public class NEIGTNewHorizonsConfig implements IConfigureNEI
     @Override
     public String getVersion()
     {
-        return Tags.VERSION;
+        return Tags.MOD_VERSION;
     }
 
 }

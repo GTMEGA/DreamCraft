@@ -30,7 +30,7 @@ public enum FluidList {
 		Fluid = pFluid;
 		if (Fluid != null)
 		{
-			Fluid.SetModID(Tags.MODID);
+			Fluid.SetModID(Tags.MOD_ID);
 			Fluid.setCreativeTabName(pCreativeTabName);
 		}
 	}

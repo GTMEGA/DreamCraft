@@ -1,9 +1,5 @@
 package com.dreammaster.main;
 
-import com.dreammaster.modbabychest.BlockBabyChest;
-import com.dreammaster.modbabychest.RenderBabyChest;
-import com.dreammaster.modbabychest.RenderItemBabyChest;
-import com.dreammaster.modbabychest.TileEntityBabyChest;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -30,12 +26,6 @@ public class ClientProxy extends CommonProxy
     @Override
     public void registerRenderInfo()
     {
-        BlockBabyChest.pRenderID = RenderingRegistry.getNextAvailableRenderId();
-        TileEntitySpecialRenderer render = new RenderBabyChest();
-
-        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MainRegistry._mBlockBabyChest), new RenderItemBabyChest());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBabyChest.class, render);
-
         MinecraftForge.EVENT_BUS.register(CONFIG_HANDLER);
     }
 

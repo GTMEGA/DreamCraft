@@ -55,7 +55,7 @@ public enum BlockList {
 	{
 		Block = pBlock;
 		if (Block != null) {
-            Block.setModIDName(Tags.MODID);
+            Block.setModIDName(Tags.MOD_ID);
         }
 	}
 	
