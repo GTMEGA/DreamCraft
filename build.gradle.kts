@@ -7,7 +7,7 @@ group = "com.dreammaster"
 minecraft_fp {
     mod {
         modid = "dreamcraft"
-        name = "Core"
+        name = "DreamCraft"
         rootPkg = "$group"
     }
 
