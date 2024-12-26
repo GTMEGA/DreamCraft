@@ -10,9 +10,6 @@ import com.dreammaster.fluids.FluidList;
 import com.dreammaster.gthandler.*;
 import com.dreammaster.item.ItemList;
 import com.dreammaster.loginhandler.LoginHandler;
-import com.dreammaster.modbabychest.BlockBabyChest;
-import com.dreammaster.modbabychest.ItemBlockBabyChest;
-import com.dreammaster.modbabychest.TileEntityBabyChest;
 import com.dreammaster.modctt.CustomToolTipsHandler;
 import com.dreammaster.modcustomdrops.CustomDropsHandler;
 import com.dreammaster.modcustomfuels.CustomFuelsHandler;
@@ -295,10 +292,8 @@ public class MainRegistry
         // register events in modules
         RegisterModuleEvents();
 
-        if (CoreConfig.ModBabyChest_Enabled) {
-            InitAdditionalBlocks();
-        }
-        
+        InitAdditionalBlocks();
+
         // Register additional OreDictionary Names
 //        if(CoreConfig.OreDictItems_Enabled)
 //        OreDictHandler.register_all();
@@ -307,17 +302,8 @@ public class MainRegistry
         TF_Loot_Chests.init();
     }
 
-    public static Block _mBlockBabyChest = new BlockBabyChest();
-
     private void InitAdditionalBlocks()
     {
-        GameRegistry.registerBlock(_mBlockBabyChest, ItemBlockBabyChest.class, "BabyChest");
-        GameRegistry.addShapelessRecipe(new ItemStack(_mBlockBabyChest, 9), new ItemStack(Blocks.chest, 1, 0));
-        GameRegistry.registerTileEntity(TileEntityBabyChest.class, "teBabyChest");
-
-        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
-
-        proxy.registerRenderInfo();
         GT_Loader_CasingNH.load();
     }
 
