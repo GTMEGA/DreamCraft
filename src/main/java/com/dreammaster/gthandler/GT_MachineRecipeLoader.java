@@ -780,69 +780,69 @@ public class GT_MachineRecipeLoader implements Runnable {
 
         GT_Values.RA.addBenderRecipe(GT_OreDictUnificator.get(OrePrefixes.plateQuadruple, Materials.Steel, 1L), ItemList.Shape_Empty.get(1L), 200, 120);
 
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Plate.get(0L), ItemList.Shape_Mold_Plate.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Casing.get(0L), ItemList.Shape_Mold_Casing.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Gear.get(0L), ItemList.Shape_Mold_Gear.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Credit.get(0L), ItemList.Shape_Mold_Credit.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Bottle.get(0L), ItemList.Shape_Mold_Bottle.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Ingot.get(0L), ItemList.Shape_Mold_Ingot.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Ball.get(0L), ItemList.Shape_Mold_Ball.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Block.get(0L), ItemList.Shape_Mold_Block.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Nugget.get(0L), ItemList.Shape_Mold_Nugget.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Bun.get(0L), ItemList.Shape_Mold_Bun.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Bread.get(0L), ItemList.Shape_Mold_Bread.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Baguette.get(0L), ItemList.Shape_Mold_Baguette.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Cylinder.get(0L), ItemList.Shape_Mold_Cylinder.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Anvil.get(0L), ItemList.Shape_Mold_Anvil.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Name.get(0L), ItemList.Shape_Mold_Name.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Arrow.get(0L), ItemList.Shape_Mold_Arrow.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Gear_Small.get(0L), ItemList.Shape_Mold_Gear_Small.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Rod.get(0L), ItemList.Shape_Mold_Rod.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Bolt.get(0L), ItemList.Shape_Mold_Bolt.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Round.get(0L), ItemList.Shape_Mold_Round.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Screw.get(0L), ItemList.Shape_Mold_Screw.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Ring.get(0L), ItemList.Shape_Mold_Ring.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Rod_Long.get(0L), ItemList.Shape_Mold_Rod_Long.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Rotor.get(0L), ItemList.Shape_Mold_Rotor.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Turbine_Blade.get(0L), ItemList.Shape_Mold_Turbine_Blade.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Pipe_Tiny.get(0L), ItemList.Shape_Mold_Pipe_Tiny.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Pipe_Small.get(0L), ItemList.Shape_Mold_Pipe_Small.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Pipe_Medium.get(0L), ItemList.Shape_Mold_Pipe_Medium.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Pipe_Large.get(0L), ItemList.Shape_Mold_Pipe_Large.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Pipe_Huge.get(0L), ItemList.Shape_Mold_Pipe_Huge.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), GT_ModHandler.getModItem("dreamcraft", "item.MoldHelmet", 0, 0), GT_ModHandler.getModItem("dreamcraft", "item.MoldHelmet", 1, 0), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), GT_ModHandler.getModItem("dreamcraft", "item.MoldChestplate", 0, 0), GT_ModHandler.getModItem("dreamcraft", "item.MoldChestplate", 1, 0), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), GT_ModHandler.getModItem("dreamcraft", "item.MoldLeggings", 0, 0), GT_ModHandler.getModItem("dreamcraft", "item.MoldLeggings", 1, 0), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), GT_ModHandler.getModItem("dreamcraft", "item.MoldBoots", 0, 0), GT_ModHandler.getModItem("dreamcraft", "item.MoldBoots", 1, 0), 200, 256);
-
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Plate.get(0L), ItemList.Shape_Extruder_Plate.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Rod.get(0L), ItemList.Shape_Extruder_Rod.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Bolt.get(0L), ItemList.Shape_Extruder_Bolt.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Ring.get(0L), ItemList.Shape_Extruder_Ring.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Cell.get(0L), ItemList.Shape_Extruder_Cell.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Ingot.get(0L), ItemList.Shape_Extruder_Ingot.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Wire.get(0L), ItemList.Shape_Extruder_Wire.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Casing.get(0L), ItemList.Shape_Extruder_Casing.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pipe_Tiny.get(0L), ItemList.Shape_Extruder_Pipe_Tiny.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pipe_Small.get(0L), ItemList.Shape_Extruder_Pipe_Small.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pipe_Medium.get(0L), ItemList.Shape_Extruder_Pipe_Medium.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pipe_Large.get(0L), ItemList.Shape_Extruder_Pipe_Large.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pipe_Huge.get(0L), ItemList.Shape_Extruder_Pipe_Huge.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Block.get(0L), ItemList.Shape_Extruder_Block.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Sword.get(0L), ItemList.Shape_Extruder_Sword.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pickaxe.get(0L), ItemList.Shape_Extruder_Pickaxe.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Shovel.get(0L), ItemList.Shape_Extruder_Shovel.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Axe.get(0L), ItemList.Shape_Extruder_Axe.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Hoe.get(0L), ItemList.Shape_Extruder_Hoe.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Hammer.get(0L), ItemList.Shape_Extruder_Hammer.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_File.get(0L), ItemList.Shape_Extruder_File.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Saw.get(0L), ItemList.Shape_Extruder_Saw.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Gear.get(0L), ItemList.Shape_Extruder_Gear.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Bottle.get(0L), ItemList.Shape_Extruder_Bottle.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Rotor.get(0L), ItemList.Shape_Extruder_Rotor.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Small_Gear.get(0L), ItemList.Shape_Extruder_Small_Gear.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Turbine_Blade.get(0L), ItemList.Shape_Extruder_Turbine_Blade.get(1L), 200, 256);
-        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), GT_ModHandler.getModItem("dreamcraft", "item.ExtruderShapeBoat", 0, 0), GT_ModHandler.getModItem("dreamcraft", "item.ExtruderShapeBoat", 1, 0), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Plate.get(0L), ItemList.Shape_Mold_Plate.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Casing.get(0L), ItemList.Shape_Mold_Casing.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Gear.get(0L), ItemList.Shape_Mold_Gear.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Credit.get(0L), ItemList.Shape_Mold_Credit.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Bottle.get(0L), ItemList.Shape_Mold_Bottle.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Ingot.get(0L), ItemList.Shape_Mold_Ingot.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Ball.get(0L), ItemList.Shape_Mold_Ball.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Block.get(0L), ItemList.Shape_Mold_Block.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Nugget.get(0L), ItemList.Shape_Mold_Nugget.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Bun.get(0L), ItemList.Shape_Mold_Bun.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Bread.get(0L), ItemList.Shape_Mold_Bread.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Baguette.get(0L), ItemList.Shape_Mold_Baguette.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Cylinder.get(0L), ItemList.Shape_Mold_Cylinder.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Anvil.get(0L), ItemList.Shape_Mold_Anvil.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Name.get(0L), ItemList.Shape_Mold_Name.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Arrow.get(0L), ItemList.Shape_Mold_Arrow.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Gear_Small.get(0L), ItemList.Shape_Mold_Gear_Small.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Rod.get(0L), ItemList.Shape_Mold_Rod.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Bolt.get(0L), ItemList.Shape_Mold_Bolt.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Round.get(0L), ItemList.Shape_Mold_Round.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Screw.get(0L), ItemList.Shape_Mold_Screw.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Ring.get(0L), ItemList.Shape_Mold_Ring.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Rod_Long.get(0L), ItemList.Shape_Mold_Rod_Long.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Rotor.get(0L), ItemList.Shape_Mold_Rotor.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Turbine_Blade.get(0L), ItemList.Shape_Mold_Turbine_Blade.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Pipe_Tiny.get(0L), ItemList.Shape_Mold_Pipe_Tiny.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Pipe_Small.get(0L), ItemList.Shape_Mold_Pipe_Small.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Pipe_Medium.get(0L), ItemList.Shape_Mold_Pipe_Medium.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Pipe_Large.get(0L), ItemList.Shape_Mold_Pipe_Large.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Mold_Pipe_Huge.get(0L), ItemList.Shape_Mold_Pipe_Huge.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), GT_ModHandler.getModItem("dreamcraft", "item.MoldHelmet", 0, 0), GT_ModHandler.getModItem("dreamcraft", "item.MoldHelmet", 1, 0), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), GT_ModHandler.getModItem("dreamcraft", "item.MoldChestplate", 0, 0), GT_ModHandler.getModItem("dreamcraft", "item.MoldChestplate", 1, 0), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), GT_ModHandler.getModItem("dreamcraft", "item.MoldLeggings", 0, 0), GT_ModHandler.getModItem("dreamcraft", "item.MoldLeggings", 1, 0), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), GT_ModHandler.getModItem("dreamcraft", "item.MoldBoots", 0, 0), GT_ModHandler.getModItem("dreamcraft", "item.MoldBoots", 1, 0), 200, 256);
+//
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Plate.get(0L), ItemList.Shape_Extruder_Plate.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Rod.get(0L), ItemList.Shape_Extruder_Rod.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Bolt.get(0L), ItemList.Shape_Extruder_Bolt.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Ring.get(0L), ItemList.Shape_Extruder_Ring.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Cell.get(0L), ItemList.Shape_Extruder_Cell.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Ingot.get(0L), ItemList.Shape_Extruder_Ingot.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Wire.get(0L), ItemList.Shape_Extruder_Wire.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Casing.get(0L), ItemList.Shape_Extruder_Casing.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pipe_Tiny.get(0L), ItemList.Shape_Extruder_Pipe_Tiny.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pipe_Small.get(0L), ItemList.Shape_Extruder_Pipe_Small.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pipe_Medium.get(0L), ItemList.Shape_Extruder_Pipe_Medium.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pipe_Large.get(0L), ItemList.Shape_Extruder_Pipe_Large.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pipe_Huge.get(0L), ItemList.Shape_Extruder_Pipe_Huge.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Block.get(0L), ItemList.Shape_Extruder_Block.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Sword.get(0L), ItemList.Shape_Extruder_Sword.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Pickaxe.get(0L), ItemList.Shape_Extruder_Pickaxe.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Shovel.get(0L), ItemList.Shape_Extruder_Shovel.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Axe.get(0L), ItemList.Shape_Extruder_Axe.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Hoe.get(0L), ItemList.Shape_Extruder_Hoe.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Hammer.get(0L), ItemList.Shape_Extruder_Hammer.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_File.get(0L), ItemList.Shape_Extruder_File.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Saw.get(0L), ItemList.Shape_Extruder_Saw.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Gear.get(0L), ItemList.Shape_Extruder_Gear.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Bottle.get(0L), ItemList.Shape_Extruder_Bottle.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Rotor.get(0L), ItemList.Shape_Extruder_Rotor.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Small_Gear.get(0L), ItemList.Shape_Extruder_Small_Gear.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), ItemList.Shape_Extruder_Turbine_Blade.get(0L), ItemList.Shape_Extruder_Turbine_Blade.get(1L), 200, 256);
+//        GT_Values.RA.addFormingPressRecipe(ItemList.Shape_Empty.get(1L), GT_ModHandler.getModItem("dreamcraft", "item.ExtruderShapeBoat", 0, 0), GT_ModHandler.getModItem("dreamcraft", "item.ExtruderShapeBoat", 1, 0), 200, 256);
 
 //        GT_Values.RA.addFormingPressRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glass, 1L), ItemList.Shape_Mold_Ball.get(0L), ItemList.Circuit_Parts_Glass_Tube.get(1L), 120, 30);
         GT_Values.RA.addFormingPressRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glass, 1L), ItemList.Shape_Mold_Bottle.get(0L), ItemList.Bottle_Empty.get(1L), 32, 8);
@@ -938,9 +938,9 @@ public class GT_MachineRecipeLoader implements Runnable {
 //        GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Steel, 2L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Aluminium, 5L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Obsidian, 2L), GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NI, GT_Values.NF, GT_Values.NF, CustomItemList.AlumiteDust.get(9L), 200, 8);
 
         GT_Values.RA.addMixerRecipe(ItemList.IC2_Energium_Dust.get(9L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Lapis, 6L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, CustomItemList.LapotronDust.get(15L), 600, 480);
-        GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dustSmall, Materials.Flint, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 4L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glass, 4L), 200, 8);
+//        GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dustSmall, Materials.Flint, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 4L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glass, 4L), 200, 8);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Flint, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 16L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(4), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glass, 16L), 800, 8);
-        GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dustSmall, Materials.Flint, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Quartzite, 4L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glass, 5L), 160, 8);
+//        GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dustSmall, Materials.Flint, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Quartzite, 4L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glass, 5L), 160, 8);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Flint, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Quartzite, 16L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(4), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glass, 20L), 640, 8);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Gallium, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Arsenic, 1L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.GalliumArsenide, 2L), 300, 30);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Vanadium, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Chrome, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Steel, 7L), GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.VanadiumSteel, 9L), 100, 30);
@@ -949,7 +949,7 @@ public class GT_MachineRecipeLoader implements Runnable {
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Steel, 9L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Nickel, 6L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Coal, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Silicon, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Manganese, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Chrome, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Molybdenum, 1L), GT_Values.NI, GT_Utility.getIntegratedCircuit(18), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.DamascusSteel, 18L), 225, 900);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Steel, 9L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Manganese, 4L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Chrome, 4L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Coal, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Silicon, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Vanadium, 1L), GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(9), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.DamascusSteel, 18L), 225, 900);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Electrum, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Redstone, 1L), GT_Utility.getIntegratedCircuit(1), GT_Values.NI, GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Electrotine, 1L), 200, 8);
-        GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Calcite, 2L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Stone, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Clay, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_Values.NI, GT_Utility.getIntegratedCircuit(2), Materials.Water.getFluid(2000L), Materials.Concrete.getMolten(2304L), GT_Values.NI, 100, 16);
+//        GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Calcite, 2L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Stone, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Clay, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 1L), GT_Values.NI, GT_Utility.getIntegratedCircuit(2), Materials.Water.getFluid(2000L), Materials.Concrete.getMolten(2304L), GT_Values.NI, 100, 16);
 
         if (Loader.isModLoaded("ExtraTrees"))
             GT_Values.RA.addMixerRecipe(GT_ModHandler.getModItem("ExtraTrees", "misc", 4L, 2), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(1), Materials.Water.getFluid(500L), GT_Values.NF, ItemList.FR_Mulch.get(1L), 600, 2);
@@ -1080,10 +1080,10 @@ public class GT_MachineRecipeLoader implements Runnable {
 //        GT_Values.RA.addWiremillRecipe(GT_OreDictUnificator.get(OrePrefixes.stickLong, Materials.MeteoricIron, 1L), CustomItemList.MeteoricIronString.get(4L), 600, 480);
 //        GT_Values.RA.addWiremillRecipe(GT_OreDictUnificator.get(OrePrefixes.stickLong, Materials.Tungsten, 1L), CustomItemList.TungstenString.get(4L), 1200, 1024);
 
-        if (Loader.isModLoaded("Natura"))
-            GT_Values.RA.addWiremillRecipe(GT_ModHandler.getModItem("Natura", "barleyFood", 2L, 3), new ItemStack(Items.string, 1, 0), 200, 8);
-
-        GT_Values.RA.addWiremillRecipe(GT_OreDictUnificator.get(OrePrefixes.stick, Materials.NetherStar, 1L), GT_OreDictUnificator.get(OrePrefixes.wireGt01, Materials.NetherStar, 1L), 100, 4);
+//        if (Loader.isModLoaded("Natura"))
+//            GT_Values.RA.addWiremillRecipe(GT_ModHandler.getModItem("Natura", "barleyFood", 2L, 3), new ItemStack(Items.string, 1, 0), 200, 8);
+//
+//        GT_Values.RA.addWiremillRecipe(GT_OreDictUnificator.get(OrePrefixes.stick, Materials.NetherStar, 1L), GT_OreDictUnificator.get(OrePrefixes.wireGt01, Materials.NetherStar, 1L), 100, 4);
 
         // Circuits and Boards
 //        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Wood, 8), GT_OreDictUnificator.get(OrePrefixes.foil, Materials.Copper, 32)}, FluidRegistry.getFluidStack("glue", 1152), ItemList.Circuit_Board_Coated_Basic.get(8L), 1600, 8);
@@ -1111,7 +1111,7 @@ public class GT_MachineRecipeLoader implements Runnable {
 //        GT_Values.RA.addChemicalRecipe(ItemList.Circuit_Board_Epoxy.get(1L), GT_OreDictUnificator.get(OrePrefixes.foil, Materials.Electrum, 8), Materials.SodiumPersulfate.getFluid(1000L), GT_Values.NF, ItemList.Circuit_Board_Epoxy_Advanced.get(1L), 1200, 30);
 
 //        GT_Values.RA.addChemicalBathRecipe(ItemList.Circuit_Parts_GlassFiber.get(1L), Materials.Epoxid.getMolten(144L), Materials.EpoxidFiberReinforced.getPlates(1), GT_Values.NI, GT_Values.NI, new int[]{10000}, 240, 16);
-        GT_Values.RA.addChemicalBathRecipe(GT_ModHandler.getIC2Item("carbonFiber", 1), Materials.Epoxid.getMolten(144L), Materials.EpoxidFiberReinforced.getPlates(1), GT_Values.NI, GT_Values.NI, new int[]{10000}, 240, 16);
+//        GT_Values.RA.addChemicalBathRecipe(GT_ModHandler.getIC2Item("carbonFiber", 1), Materials.Epoxid.getMolten(144L), Materials.EpoxidFiberReinforced.getPlates(1), GT_Values.NI, GT_Values.NI, new int[]{10000}, 240, 16);
 //        GT_Values.RA.addChemicalRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.EpoxidFiberReinforced, 1), GT_OreDictUnificator.get(OrePrefixes.foil, Materials.Copper, 12), Materials.SulfuricAcid.getFluid(500L), GT_Values.NF, ItemList.Circuit_Board_Fiberglass.get(1L), 500, 10);
 
 //        GT_Values.RA.addChemicalRecipe(ItemList.Circuit_Board_Fiberglass.get(1L), GT_OreDictUnificator.get(OrePrefixes.foil, Materials.AnnealedCopper, 12), Materials.IronIIIChloride.getFluid(1000L), GT_Values.NF, ItemList.Circuit_Board_Fiberglass_Advanced.get(1L), GT_Values.NI, 1800, 30, true);
@@ -1152,7 +1152,7 @@ public class GT_MachineRecipeLoader implements Runnable {
 //        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Carbon, 1), GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Electrum, 4), GT_Utility.getIntegratedCircuit(5)}, Materials.Plastic.getMolten(288L), ItemList.Circuit_Parts_ResistorSMD.get(16L), 320, 96);
 //        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Graphene, 4), GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Platinum, 16), GT_Utility.getIntegratedCircuit(6)}, Materials.Polybenzimidazole.getMolten(1440L), ItemList.Circuit_Parts_ResistorASMD.get(64L), 640, 384);
 //        GT_Values.RA.addAlloySmelterRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glass, 1), ItemList.Shape_Mold_Ball.get(0), ItemList.Circuit_Parts_Glass_Tube.get(1L), 240, 16);
-        GT_Values.RA.addAlloySmelterRecipe(new ItemStack(Blocks.obsidian, 1, 0), ItemList.Shape_Mold_Ingot.get(0L), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Obsidian, 2L), 130, 3);
+//        GT_Values.RA.addAlloySmelterRecipe(new ItemStack(Blocks.obsidian, 1, 0), ItemList.Shape_Mold_Ingot.get(0L), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Obsidian, 2L), 130, 3);
 //        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Copper, 4), GT_OreDictUnificator.get(OrePrefixes.dustSmall, Materials.GalliumArsenide, 1)}, Materials.Plastic.getMolten(144L), ItemList.Circuit_Parts_Diode.get(4L), 600, 30);
 //        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Copper, 4), GT_OreDictUnificator.get(OrePrefixes.dustSmall, Materials.GalliumArsenide, 1)}, Materials.Glass.getMolten(288L), ItemList.Circuit_Parts_Diode.get(2L), 600, 30);
 //        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Copper, 4), GT_OreDictUnificator.get(OrePrefixes.dustSmall, Materials.GalliumArsenide, 1)}, FluidRegistry.getFluidStack("glass.molten", 1000), ItemList.Circuit_Parts_Diode.get(2L), 600, 30);
@@ -1231,7 +1231,7 @@ public class GT_MachineRecipeLoader implements Runnable {
 //        GT_Values.RA.addChemicalRecipe(ItemList.Circuit_Wafer_NanoCPU.get(1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.IndiumGalliumPhosphide, 1), Materials.Radon.getGas(50L), GT_Values.NF, ItemList.Circuit_Wafer_QuantumCPU.get(1L), GT_Values.NI, 1200, 1920, true);
 //        GT_Values.RA.addChemicalRecipe(ItemList.Circuit_Wafer_NanoCPU.get(1L), ItemList.QuantumEye.get(2L), Materials.GalliumArsenide.getMolten(288L), GT_Values.NF, ItemList.Circuit_Wafer_QuantumCPU.get(1L), GT_Values.NI, 900, 1920, true);
 
-        GT_Values.RA.addCutterRecipe(GT_ModHandler.getModItem("IC2", "blockAlloyGlass", 1L, 0), CustomItemList.ReinforcedGlassPLate.get(2L), GT_Values.NI, 1200, 30);
+//        GT_Values.RA.addCutterRecipe(GT_ModHandler.getModItem("IC2", "blockAlloyGlass", 1L, 0), CustomItemList.ReinforcedGlassPLate.get(2L), GT_Values.NI, 1200, 30);
 
         //GT_Values.RA.addChemicalRecipe(GT_OreDictUnificator.get(Materials.Hydrogen.getCells(3)), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Magnetite, 0), Materials.Nitrogen.getGas(1000L), Materials.Ammonia.getGas(1000), ItemList.Cell_Empty.get(3L), 320, 384);
 
@@ -1247,8 +1247,8 @@ public class GT_MachineRecipeLoader implements Runnable {
 //            GT_Values.RA.addAutoclaveRecipe(ItemList.Circuit_Parts_RawCrystalParts.get(1L), FluidRegistry.getFluidStack("mutagen", 250), ItemList.Circuit_Parts_RawCrystalChip.get(1L), 8000, 12000, 480);
 //        GT_Values.RA.addAutoclaveRecipe(ItemList.Circuit_Parts_RawCrystalParts.get(1L), Materials.Europium.getMolten(16), ItemList.Circuit_Parts_RawCrystalChip.get(1L), 10000, 12000, 480);
 
-        GT_Values.RA.addAutoclaveSpaceRecipe(GT_OreDictUnificator.get(OrePrefixes.gemExquisite, Materials.Emerald, 12), GT_Values.NI, Materials.UUMatter.getFluid(250L), ItemList.Tool_DataOrb.get(1L), 10000, 12000, 960, true);
-        GT_Values.RA.addAutoclaveSpaceRecipe(GT_OreDictUnificator.get(OrePrefixes.gemExquisite, Materials.Olivine, 12), GT_Values.NI, Materials.UUMatter.getFluid(250L), ItemList.Tool_DataOrb.get(1L), 10000, 12000, 960, true);
+//        GT_Values.RA.addAutoclaveSpaceRecipe(GT_OreDictUnificator.get(OrePrefixes.gemExquisite, Materials.Emerald, 12), GT_Values.NI, Materials.UUMatter.getFluid(250L), ItemList.Tool_DataOrb.get(1L), 10000, 12000, 960, true);
+//        GT_Values.RA.addAutoclaveSpaceRecipe(GT_OreDictUnificator.get(OrePrefixes.gemExquisite, Materials.Olivine, 12), GT_Values.NI, Materials.UUMatter.getFluid(250L), ItemList.Tool_DataOrb.get(1L), 10000, 12000, 960, true);
         //GT_ModHandler.addShapelessCraftingRecipe(ItemList.Circuit_Parts_RawCrystalChip.get(9), new Object[]{ItemList.Circuit_Chip_CrystalCPU.get(1L)});
 //        GT_Values.RA.addBlastRecipe(ItemList.Circuit_Parts_RawCrystalChip.get(1L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Emerald, 1), Materials.Helium.getGas(1000), GT_Values.NF, ItemList.Circuit_Parts_Crystal_Chip_Elite.get(1L), GT_Values.NI, 900, 480, 5000);
 //        GT_Values.RA.addBlastRecipe(ItemList.Circuit_Parts_RawCrystalChip.get(1L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Olivine, 1), Materials.Helium.getGas(1000), GT_Values.NF, ItemList.Circuit_Parts_Crystal_Chip_Elite.get(1L), GT_Values.NI, 900, 480, 5000);
