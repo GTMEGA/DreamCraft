@@ -5,7 +5,7 @@ import gregtech.api.interfaces.ITexture;
 import gregtech.api.interfaces.metatileentity.IMetaTileEntity;
 import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.metatileentity.MetaTileEntity;
-import gregtech.api.objects.GT_RenderedTexture;
+import gregtech.api.render.TextureFactory;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -72,7 +72,7 @@ public class GT_MetaTileEntity_IDSU extends MetaTileEntity
     @Override
     public ITexture[] getTexture(IGregTechTileEntity aBaseMetaTileEntity, byte aSide, byte aFacing, byte aColorIndex, boolean aActive, boolean aRedstone)
     {
-        return new ITexture[]{aSide == aFacing ? new GT_RenderedTexture(_mIDSU_Out) : new GT_RenderedTexture(_mIDSU)};
+        return new ITexture[]{aSide == aFacing ? TextureFactory.of(_mIDSU_Out) : TextureFactory.of(_mIDSU)};
     }
     
     @Override

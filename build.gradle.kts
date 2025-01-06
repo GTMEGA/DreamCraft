@@ -45,7 +45,7 @@ dependencies {
     }
 
     implementation ("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
-    implementation("gtmega:gt5u-mc1.7.10:5.40.0-a0004:dev") {
+    implementation("gtmega:gt5u-mc1.7.10:5.41.0-mega:dev") {
         excludeDeps()
     }
 
