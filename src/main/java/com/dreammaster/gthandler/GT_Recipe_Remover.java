@@ -21,33 +21,6 @@ public class GT_Recipe_Remover implements Runnable {
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("AdvancedSolarPanel", "BlockAdvSolarPanel", 1L, 2), true, false, true);
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("AdvancedSolarPanel", "BlockAdvSolarPanel", 1L, 3), true, false, true);
 
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "quiver", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "shield.wood", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "shield.hide", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "shield.iron", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "shield.gold", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "shield.diamond", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "dagger.wood", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "dagger.stone", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "dagger.iron", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "dagger.gold", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "dagger.diamond", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "spear.wood", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "spear.stone", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "spear.iron", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "spear.gold", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "spear.diamond", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "waraxe.wood", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "waraxe.stone", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "waraxe.iron", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "waraxe.gold", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "waraxe.diamond", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "mace.wood", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "mace.stone", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "mace.iron", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "mace.gold", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "mace.diamond", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("battlegear2", "chain", 1L, 0), true, false, true);
         //railcraft
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem(aTextRailcraft, aTextMachineBeta, 1L, 0), true, false, true);
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem(aTextRailcraft, aTextMachineBeta, 1L, 1), true, false, true);
@@ -110,11 +83,6 @@ public class GT_Recipe_Remover implements Runnable {
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("Forestry", "engine", 1L, 1), true, false, true);
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("Forestry", "engine", 1L, 2), true, false, true);
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("Forestry", "engine", 1L, 4), true, false, true);
-        //Steve Carts
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("StevesCarts", "ModuleComponents", 1L, 9), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("StevesCarts", "ModuleComponents", 1L, 16), true, false, true);
-        //Vanilla
-        GT_ModHandler.removeRecipeByOutput(new ItemStack(Blocks.iron_bars, 1, 32767), true, false, true);
         //Natural Compass
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("naturescompass", "NaturesCompass", 1L, 0), true, false, true);
         //IC2
@@ -141,12 +109,6 @@ public class GT_Recipe_Remover implements Runnable {
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemBatChargeLamaCrystal", 1L, GT_Values.W));
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemTreetapElectric",1,GT_Values.W));
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemToolHoe",1,GT_Values.W));
-        //Open Printers
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("openprinter", "openprinter.printer", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("openprinter", "openprinter.shredder", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("openprinter", "openprinter.printerInkBlack", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("openprinter", "openprinter.printerInkColor", 1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("openprinter", "openprinter.folder", 1L, 0), true, false, true);
         //Open Security
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("opensecurity", "magreader", 1L, 0), true, false, true);
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("opensecurity", "rfidreader", 1L, 0), true, false, true);
@@ -173,13 +135,8 @@ public class GT_Recipe_Remover implements Runnable {
         //Steve Carts
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("StevesCarts","ModuleComponents",1L, 18),true, false, true);
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("StevesCarts","ModuleComponents",1L, 19),true, false, true);
-        //Translocator
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("Translocator","diamondNugget",2L, 0), true, false, true);
-        //Draconic Evolution
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("DraconicEvolution","chaosShard",1L, 0), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("DraconicEvolution","chaosFragment",1L, 2), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("DraconicEvolution","chaosFragment",1L, 1), true, false, true);
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("DraconicEvolution","chaosFragment",1L, 0), true, false, true);
+        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("StevesCarts", "ModuleComponents", 1L, 9), true, false, true);
+        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("StevesCarts", "ModuleComponents", 1L, 16), true, false, true);
     }
 
 }
