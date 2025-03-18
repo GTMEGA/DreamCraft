@@ -308,8 +308,8 @@ public class GT_Loader_Items
 //        CustomItemList.QuantumProcessorBoard.set(ItemList.QuantumProcessorBoard.getIS());
 //        CustomItemList.EngravedQuantumChip.set(ItemList.EngravedQuantumChip.getIS());
 //        CustomItemList.IridiumAlloyItemCasing.set(ItemList.IridiumAlloyItemCasing.getIS());
-		CustomItemList.ReinforcedGlassPLate.set(ItemList.ReinforcedGlassPlate.getIS());
-        CustomItemList.ReinforcedGlassLense.set(ItemList.ReinforcedGlassLense.getIS());
+//		CustomItemList.ReinforcedGlassPLate.set(ItemList.ReinforcedGlassPlate.getIS());
+//        CustomItemList.ReinforcedGlassLense.set(ItemList.ReinforcedGlassLense.getIS());
 //		CustomItemList.MarshmallowForm.set(ItemList.MarshmallowForm.getIS());
 //		CustomItemList.MarshmallowFormMold.set(ItemList.MarshmallowFormMold.getIS());
 //		CustomItemList.UncookedSlush.set(ItemList.UncookedSlush.getIS());
@@ -414,7 +414,7 @@ public class GT_Loader_Items
 		CustomItemList.RawOrbTier6.set(ItemList.RawOrbTier6.getIS());
 		CustomItemList.TeleposerFrame.set(ItemList.TeleposerFrame.getIS());
 //		CustomItemList.MysteriousCrystal.set(ItemList.MysteriousCrystal.getIS());
-		CustomItemList.WoodenCasing.set(ItemList.WoodenCasing.getIS());
+//		CustomItemList.WoodenCasing.set(ItemList.WoodenCasing.getIS());
 //		CustomItemList.EssentiaCircuit.set(ItemList.EssentiaCircuit.getIS());
 //		CustomItemList.EngineeringProcessorEssentiaPulsatingCore.set(ItemList.EngineeringProcessorEssentiaPulsatingCore.getIS());
 //		CustomItemList.ManyullynCrystal.set(ItemList.ManyullynCrystal.getIS());
@@ -505,7 +505,7 @@ public class GT_Loader_Items
 //		CustomItemList.BarnardaEStoneDust.set(ItemList.BarnardaEStoneDust.getIS());
 //		CustomItemList.BarnardaFStoneDust.set(ItemList.BarnardaFStoneDust.getIS());
 //		CustomItemList.MysteriousCrystalDust.set(ItemList.MysteriousCrystalDust.getIS());
-		CustomItemList.IndustryFrame.set(ItemList.IndustryFrame.getIS());
+//		CustomItemList.IndustryFrame.set(ItemList.IndustryFrame.getIS());
 //		CustomItemList.TCetiEStoneDust.set(ItemList.TCetiEStoneDust.getIS());
 //		CustomItemList.AdsorptionFilterCasing.set(ItemList.AdsorptionFilterCasing.getIS());
 //		CustomItemList.AdsorptionFilter.set(ItemList.AdsorptionFilter.getIS());
@@ -534,7 +534,7 @@ public class GT_Loader_Items
 //		CustomItemList.MedalWarp.set(ItemList.MedalWarp.getIS());
 //		CustomItemList.MedalWarp.getItem().setMaxStackSize(1);
 //		CustomItemList.AluminoSilicateWool.set(ItemList.AluminoSilicateWool.getIS());
-		CustomItemList.MaceratedPlantmass.set(ItemList.MaceratedPlantmass.getIS());
+//		CustomItemList.MaceratedPlantmass.set(ItemList.MaceratedPlantmass.getIS());
 //		CustomItemList.BedrockiumPlate.set(ItemList.BedrockiumPlate.getIS());
 //		CustomItemList.EngineCore.set(ItemList.EngineCore.getIS());
 //		CustomItemList.AlumiteDust.set(ItemList.AlumiteDust.getIS());
