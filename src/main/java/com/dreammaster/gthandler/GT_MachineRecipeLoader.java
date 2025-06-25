@@ -1,14 +1,12 @@
 package com.dreammaster.gthandler;
 
 import cpw.mods.fml.common.Loader;
-import forestry.api.recipes.IFermenterRecipe;
-import gregtech.api.GregTech_API;
+
 import gregtech.api.enums.*;
 import gregtech.api.util.GT_ModHandler;
 import gregtech.api.util.GT_OreDictUnificator;
-import gregtech.api.util.GT_Recipe;
 import gregtech.api.util.GT_Utility;
-import ic2.core.Ic2Items;
+
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -17,10 +15,6 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.oredict.OreDictionary;
-
-import java.lang.reflect.Field;
-
-import static gregtech.api.enums.GT_Values.*;
 
 public class GT_MachineRecipeLoader implements Runnable {
     @Override
@@ -84,8 +78,8 @@ public class GT_MachineRecipeLoader implements Runnable {
         GT_Values.RA.addCentrifugeRecipe(ItemList.Cell_Air.get(5L), GT_Values.NI, GT_Values.NF, Materials.Nitrogen.getGas(3900L), Materials.Oxygen.getCells(1), ItemList.Cell_Empty.get(4L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Values.NI, new int[]{10000, 10000}, 1600, 8);
         GT_Values.RA.addChemicalBathRecipe(new ItemStack(Items.leather, 2, 0), Materials.PhosphoricAcid.getFluid(144), GT_ModHandler.getModItem("Backpack", "tannedLeather", 1L, 0), GT_Values.NI, GT_Values.NI, new int[]{10000}, 300, 30);
 
-        GT_Values.RA.addCompressorRecipe(GT_ModHandler.getModItem("IC2", "itemWeed", 16L), ItemList.IC2_Plantball.get(1L), 300, 2);
-        GT_Values.RA.addCompressorRecipe(GT_ModHandler.getModItem("ExtraTrees", "food", 64L, 24), ItemList.IC2_Plantball.get(1L), 300, 2);
+        GT_Values.RA.addCompressorRecipe(GT_ModHandler.getModItem("IC2", "itemWeed", 16L), ItemList.Plantball.get(1L), 300, 2);
+        GT_Values.RA.addCompressorRecipe(GT_ModHandler.getModItem("ExtraTrees", "food", 64L, 24), ItemList.Plantball.get(1L), 300, 2);
         GT_Values.RA.addCompressorRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Sunnarium, 1L), GT_ModHandler.getModItem("AdvancedSolarPanel", "asp_crafting_items", 1L, 0), 300, 2);
         GT_Values.RA.addCompressorRecipe(GT_ModHandler.getModItem("AdvancedSolarPanel", "asp_crafting_items", 9L, 9), GT_ModHandler.getModItem("AdvancedSolarPanel", "asp_crafting_items", 1L, 0), 300, 2);
         GT_Values.RA.addCompressorRecipe(GT_OreDictUnificator.get(OrePrefixes.nugget, Materials.WroughtIron, 9L), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.WroughtIron, 1L), 300, 2);
@@ -133,18 +127,18 @@ public class GT_MachineRecipeLoader implements Runnable {
             GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "florasapling", 2L, 7), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Gunpowder, 1L), 100, 120);
             GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "Dark Leaves", 8L, 3), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Gunpowder, 1L), 100, 120);
             GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "Dark Tree", 2L, 1), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Gunpowder, 1L), 100, 120);
-            GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "florasapling", 2L, 6), ItemList.IC2_Fertilizer.get(1), 100, 120);
-            GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "Dark Leaves", 8L, 0), ItemList.IC2_Fertilizer.get(1), 100, 120);
-            GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "Dark Tree", 2L, 0), ItemList.IC2_Fertilizer.get(1), 100, 120);
-            GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "Natura.netherfood", 1L, 0), ItemList.IC2_Fertilizer.get(4), 100, 120);
+            GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "florasapling", 2L, 6), ItemList.Fertilizer.get(1), 100, 120);
+            GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "Dark Leaves", 8L, 0), ItemList.Fertilizer.get(1), 100, 120);
+            GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "Dark Tree", 2L, 0), ItemList.Fertilizer.get(1), 100, 120);
+            GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "Natura.netherfood", 1L, 0), ItemList.Fertilizer.get(4), 100, 120);
             GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "florasapling", 2L, 4), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Bone, 1L), 100, 120);
             GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "floraleavesnocolor", 4L, 1), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Bone, 1L), 100, 120);
             GT_Values.RA.addExtractorRecipe(GT_ModHandler.getModItem("Natura", "tree", 2L, 2), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Bone, 1L), 100, 120);
 
-            GT_Values.RA.addChemicalRecipe(GT_ModHandler.getModItem("Natura", "florasapling", 2L, 6), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Apatite, 1L), Materials.Water.getFluid(1000L), GT_Values.NF, ItemList.IC2_Fertilizer.get(2), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Sulfur, 1L), 200, 120);
-            GT_Values.RA.addChemicalRecipe(GT_ModHandler.getModItem("Natura", "Dark Leaves", 8L, 0), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Apatite, 1L), Materials.Water.getFluid(1000L), GT_Values.NF, ItemList.IC2_Fertilizer.get(2), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Sulfur, 1L), 200, 120);
-            GT_Values.RA.addChemicalRecipe(GT_ModHandler.getModItem("Natura", "Dark Tree", 2L, 0), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Apatite, 1L), Materials.Water.getFluid(1000L), GT_Values.NF, ItemList.IC2_Fertilizer.get(8), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.TricalciumPhosphate, 1L), 200, 120);
-            GT_Values.RA.addChemicalRecipe(GT_ModHandler.getModItem("Natura", "Natura.netherfood", 1L, 0), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Apatite, 1L), Materials.Water.getFluid(1000L), GT_Values.NF, ItemList.IC2_Fertilizer.get(32), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.TricalciumPhosphate, 1L), 200, 120);
+            GT_Values.RA.addChemicalRecipe(GT_ModHandler.getModItem("Natura", "florasapling", 2L, 6), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Apatite, 1L), Materials.Water.getFluid(1000L), GT_Values.NF, ItemList.Fertilizer.get(2), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Sulfur, 1L), 200, 120);
+            GT_Values.RA.addChemicalRecipe(GT_ModHandler.getModItem("Natura", "Dark Leaves", 8L, 0), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Apatite, 1L), Materials.Water.getFluid(1000L), GT_Values.NF, ItemList.Fertilizer.get(2), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Sulfur, 1L), 200, 120);
+            GT_Values.RA.addChemicalRecipe(GT_ModHandler.getModItem("Natura", "Dark Tree", 2L, 0), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Apatite, 1L), Materials.Water.getFluid(1000L), GT_Values.NF, ItemList.Fertilizer.get(8), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.TricalciumPhosphate, 1L), 200, 120);
+            GT_Values.RA.addChemicalRecipe(GT_ModHandler.getModItem("Natura", "Natura.netherfood", 1L, 0), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Apatite, 1L), Materials.Water.getFluid(1000L), GT_Values.NF, ItemList.Fertilizer.get(32), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.TricalciumPhosphate, 1L), 200, 120);
         }
 
         GT_Values.RA.addDistillationTowerRecipe(new FluidStack(FluidRegistry.getFluid("pollution"), 1600), new FluidStack[]{Materials.SulfuricAcid.getFluid(50L), Materials.NitrogenDioxide.getGas(50L), Materials.Methane.getGas(50L), Materials.Mercury.getFluid(1L)}, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Ash, 1L), 600, 1920);
@@ -239,7 +233,6 @@ public class GT_MachineRecipeLoader implements Runnable {
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.HSSG, 6L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Iridium, 2L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Osmium, 1L), GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.getDust(Materials.HSSS, 9L * OrePrefixes.dust.mMaterialAmount), (int) (800L * OrePrefixes.dust.mMaterialAmount / 3628800L), 4500);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Naquadah, 2L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Trinium, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Carbon, 1L), GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.getDust(Materials.NaquadahAlloy, 4L * OrePrefixes.dust.mMaterialAmount), (int) (400L * OrePrefixes.dust.mMaterialAmount / 3628800L), 8000);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Yttrium, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Barium, 2L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.AnyCopper, 3L), GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), Materials.Oxygen.getGas(7000), GT_Values.NF, GT_OreDictUnificator.getDust(Materials.YttriumBariumCuprate, 6L * OrePrefixes.dust.mMaterialAmount), (int) (600L * OrePrefixes.dust.mMaterialAmount / 3628800L), 2000);
-        GT_Values.RA.addMixerRecipe(ItemList.IC2_Energium_Dust.get(9L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Lapis, 6L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, CustomItemList.LapotronDust.get(15L), 600, 480);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Flint, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.QuartzSand, 16L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(4), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glass, 16L), 800, 8);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Flint, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Quartzite, 16L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(4), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glass, 20L), 640, 8);
         GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Gallium, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Arsenic, 1L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(2), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.GalliumArsenide, 2L), 300, 30);
@@ -257,7 +250,7 @@ public class GT_MachineRecipeLoader implements Runnable {
 
         if (Loader.isModLoaded("BiomesOPlenty"))
             GT_Values.RA.addMixerRecipe(new ItemStack(Blocks.dirt, 1, 0), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(4), Materials.Water.getFluid(1000L), GT_Values.NF, GT_ModHandler.getModItem("BiomesOPlenty", "mudball", 4L, 0), 50, 8);
-            GT_Values.RA.addMixerRecipe(new ItemStack(Blocks.dirt, 1, 0), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Wood, 2L), new ItemStack(Blocks.sand, 4, 0), GT_Values.NI, Materials.Water.getFluid(1000L), GT_Values.NF, ItemList.IC2_Fertilizer.get(4), 100, 30);
+            GT_Values.RA.addMixerRecipe(new ItemStack(Blocks.dirt, 1, 0), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Wood, 2L), new ItemStack(Blocks.sand, 4, 0), GT_Values.NI, Materials.Water.getFluid(1000L), GT_Values.NF, ItemList.Fertilizer.get(4), 100, 30);
             GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Lead, 4L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Antimony, 1L), GT_Values.NI, GT_Utility.getIntegratedCircuit(1), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.BatteryAlloy, 5L), 100, 4);
 //            GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Tin, 9L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Antimony, 1L), GT_Values.NI, GT_Utility.getIntegratedCircuit(1), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.SolderingAlloy, 10L), 100, 8);
             GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Magnesium, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Aluminium, 2L), GT_Values.NI, GT_Utility.getIntegratedCircuit(1), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Magnalium, 3L), 100, 4);

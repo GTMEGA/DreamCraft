@@ -3,7 +3,6 @@ package com.dreammaster.gthandler.accelerator;
 
 import com.dreammaster.main.MainRegistry;
 
-import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import eu.usrv.yamcore.auxiliary.PlayerChatHelper;
@@ -244,12 +243,6 @@ public class GT_MetaTileEntity_WorldAccelerator extends GT_MetaTileEntity_Tiered
   public boolean isInputFacing( byte aSide )
   {
     return true;
-  }
-
-  @Override
-  public boolean isTeleporterCompatible()
-  {
-    return false;
   }
 
   @Override

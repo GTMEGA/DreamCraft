@@ -85,30 +85,6 @@ public class GT_Recipe_Remover implements Runnable {
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("Forestry", "engine", 1L, 4), true, false, true);
         //Natural Compass
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("naturescompass", "NaturesCompass", 1L, 0), true, false, true);
-        //IC2
-        GT_ModHandler.removeRecipeByOutput(ItemList.IC2_Energium_Dust.get(1L));
-        GT_ModHandler.removeRecipeByOutput(ItemList.IC2_LapotronCrystal.get(1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorNanoBoots", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorNanoChestplate", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorNanoHelmet", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorNanoLegs", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorQuantumBoots", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorQuantumChestplate", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorQuantumHelmet", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorQuantumLegs", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorBatpack", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorAdvBatpack", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorEnergypack", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemAdvBat", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemNightvisionGoggles", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorJetpackElectric", 1L));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemArmorJetpack", 1L, GT_Values.W));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemBatChargeRE", 1L, GT_Values.W));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemBatChargeAdv", 1L, GT_Values.W));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemBatChargeCrystal", 1L, GT_Values.W));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemBatChargeLamaCrystal", 1L, GT_Values.W));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemTreetapElectric",1,GT_Values.W));
-        GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("IC2","itemToolHoe",1,GT_Values.W));
         //Open Security
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("opensecurity", "magreader", 1L, 0), true, false, true);
         GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("opensecurity", "rfidreader", 1L, 0), true, false, true);

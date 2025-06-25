@@ -30,9 +30,6 @@ public class CoreMod_ProcessingArrayRecipeLoader {
             // Microwave (New)
             registerMapBetweenRange(10960, 10966, GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes);
 
-            //Recycler
-            registerMapBetweenRange(10990, 10996, GT_Recipe.GT_Recipe_Map.sRecyclerRecipes);
-
             //Thermal Centrifuge
             registerMapBetweenRange(11040, 11046, GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes);
 

@@ -118,12 +118,6 @@ public class GT_MetaTileEntity_IDSU extends MetaTileEntity
     }
     
     @Override
-    public boolean isTeleporterCompatible()
-    {
-        return true;
-    }
-    
-    @Override
     public long maxEUInput()
     {
         return V[(int) getInputTier()];
