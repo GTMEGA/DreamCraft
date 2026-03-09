@@ -256,7 +256,7 @@ public class MainRegistry
         Logger.debug("LOAD abandoned GT++ Aspects");
         if (Loader.isModLoaded("Thaumcraft"))
         {
-            new GregTechPlusPlusAbandonedAspectsFix();
+//            new GregTechPlusPlusAbandonedAspectsFix();
         }
 
 //        if (Loader.isModLoaded("witchery"))
